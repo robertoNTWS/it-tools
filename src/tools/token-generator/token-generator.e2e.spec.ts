@@ -6,12 +6,12 @@ test.describe('Tool - Token generator', () => {
   });
 
   test('Has title', async ({ page }) => {
-    await expect(page).toHaveTitle('Token generator - IT Tools');
+    await expect(page).toHaveTitle('Gerador de senha e token aleatório - IT Tools');
   });
 
   test('New token on refresh', async ({ page }) => {
     const initialToken = await page.getByPlaceholder('The token...').inputValue();
-    await page.getByRole('button', { name: 'Refresh' }).click();
+    await page.getByRole('button', { name: 'Gerar novamente' }).click();
     const newToken = await page.getByPlaceholder('The token...').inputValue();
 
     expect(newToken).not.toEqual(initialToken);
