@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.rsa-key-pair-generator.title'),
   path: '/rsa-key-pair-generator',
   description: translate('tools.rsa-key-pair-generator.description'),
-  keywords: ['rsa', 'key', 'pair', 'generator', 'public', 'private', 'secret', 'ssh', 'pem'],
+  keywords: ['rsa', 'key', 'pair', 'generator', 'public', 'private', 'secret', 'ssh', 'pem', 'chave publica', 'chave privada', 'par de chaves', 'certificado', 'criptografia'],
   component: () => import('./rsa-key-pair-generator.vue'),
   icon: Certificate,
 });

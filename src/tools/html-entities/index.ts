@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.html-entities.title'),
   path: '/html-entities',
   description: translate('tools.html-entities.description'),
-  keywords: ['html', 'entities', 'escape', 'unescape', 'special', 'characters', 'tags'],
+  keywords: ['html', 'entities', 'escape', 'unescape', 'special', 'characters', 'tags', 'codificar', 'decodificar', 'caracteres especiais', 'escapar', 'entidades'],
   component: () => import('./html-entities.vue'),
   icon: Code,
 });

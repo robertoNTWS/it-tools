@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.text-to-nato-alphabet.title'),
   path: '/text-to-nato-alphabet',
   description: translate('tools.text-to-nato-alphabet.description'),
-  keywords: ['string', 'nato', 'alphabet', 'phonetic', 'oral', 'transmission'],
+  keywords: ['string', 'nato', 'alphabet', 'phonetic', 'oral', 'transmission', 'alfabeto fonetico', 'otan', 'soletrar', 'radio', 'telefone'],
   component: () => import('./text-to-nato-alphabet.vue'),
   icon: Speakerphone,
 });

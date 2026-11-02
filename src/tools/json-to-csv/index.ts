@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.json-to-csv.title'),
   path: '/json-to-csv',
   description: translate('tools.json-to-csv.description'),
-  keywords: ['json', 'to', 'csv', 'convert'],
+  keywords: ['json', 'to', 'csv', 'convert', 'conversor', 'converter', 'planilha', 'excel', 'tabela'],
   component: () => import('./json-to-csv.vue'),
   icon: List,
   createdAt: new Date('2023-06-18'),

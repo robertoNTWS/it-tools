@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.string-obfuscator.title'),
   path: '/string-obfuscator',
   description: translate('tools.string-obfuscator.description'),
-  keywords: ['string', 'obfuscator', 'secret', 'token', 'hide', 'obscure', 'mask', 'masking'],
+  keywords: ['string', 'obfuscator', 'secret', 'token', 'hide', 'obscure', 'mask', 'masking', 'ofuscar', 'mascarar', 'esconder', 'ocultar', 'segredo'],
   component: () => import('./string-obfuscator.vue'),
   icon: EyeOff,
   createdAt: new Date('2023-08-16'),

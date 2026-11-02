@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.safelink-decoder.title'),
   path: '/safelink-decoder',
   description: translate('tools.safelink-decoder.description'),
-  keywords: ['outlook', 'safelink', 'decoder'],
+  keywords: ['outlook', 'safelink', 'decoder', 'link seguro', 'decodificar', 'microsoft', 'email', 'url original'],
   component: () => import('./safelink-decoder.vue'),
   icon: Mailbox,
   createdAt: new Date('2024-03-11'),

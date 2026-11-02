@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.regex-tester.title'),
   path: '/regex-tester',
   description: translate('tools.regex-tester.description'),
-  keywords: ['regex', 'tester', 'sample', 'expression'],
+  keywords: ['regex', 'tester', 'sample', 'expression', 'expressao regular', 'testar', 'testador', 'padrao', 'correspondencia'],
   component: () => import('./regex-tester.vue'),
   icon: Language,
   createdAt: new Date('2024-09-20'),

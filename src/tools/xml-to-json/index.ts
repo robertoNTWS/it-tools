@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.xml-to-json.title'),
   path: '/xml-to-json',
   description: translate('tools.xml-to-json.description'),
-  keywords: ['xml', 'json'],
+  keywords: ['xml', 'json', 'conversor', 'converter'],
   component: () => import('./xml-to-json.vue'),
   icon: Braces,
   createdAt: new Date('2024-08-09'),

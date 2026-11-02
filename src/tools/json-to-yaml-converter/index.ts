@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.json-to-yaml-converter.title'),
   path: '/json-to-yaml-converter',
   description: translate('tools.json-to-yaml-converter.description'),
-  keywords: ['yaml', 'to', 'json'],
+  keywords: ['yaml', 'to', 'json', 'conversor', 'converter'],
   component: () => import('./json-to-yaml.vue'),
   icon: Braces,
   createdAt: new Date('2023-04-10'),

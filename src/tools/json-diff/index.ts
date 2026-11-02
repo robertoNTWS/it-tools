@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.json-diff.title'),
   path: '/json-diff',
   description: translate('tools.json-diff.description'),
-  keywords: ['json', 'diff', 'compare', 'difference', 'object', 'data'],
+  keywords: ['json', 'diff', 'compare', 'difference', 'object', 'data', 'comparar', 'diferenca', 'diferencas', 'objeto'],
   component: () => import('./json-diff.vue'),
   icon: CompareArrowsRound,
   createdAt: new Date('2023-04-20'),

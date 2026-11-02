@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.ulid-generator.title'),
   path: '/ulid-generator',
   description: translate('tools.ulid-generator.description'),
-  keywords: ['ulid', 'generator', 'random', 'id', 'alphanumeric', 'identity', 'token', 'string', 'identifier', 'unique'],
+  keywords: ['ulid', 'generator', 'random', 'id', 'alphanumeric', 'identity', 'token', 'string', 'identifier', 'unique', 'identificador', 'unico', 'gerador', 'ordenavel'],
   component: () => import('./ulid-generator.vue'),
   icon: SortDescendingNumbers,
   createdAt: new Date('2023-09-11'),

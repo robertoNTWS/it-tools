@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.text-statistics.title'),
   path: '/text-statistics',
   description: translate('tools.text-statistics.description'),
-  keywords: ['text', 'statistics', 'length', 'characters', 'count', 'size', 'bytes'],
+  keywords: ['text', 'statistics', 'length', 'characters', 'count', 'size', 'bytes', 'contar', 'contador', 'caracteres', 'palavras', 'linhas', 'tamanho'],
   component: () => import('./text-statistics.vue'),
   icon: FileText,
   redirectFrom: ['/text-stats'],

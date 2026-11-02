@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.mime-types.title'),
   path: '/mime-types',
   description: translate('tools.mime-types.description'),
-  keywords: ['mime', 'types', 'extension', 'content', 'type'],
+  keywords: ['mime', 'types', 'extension', 'content', 'type', 'tipo de arquivo', 'extensao', 'content-type'],
   component: () => import('./mime-types.vue'),
   icon: World,
 });

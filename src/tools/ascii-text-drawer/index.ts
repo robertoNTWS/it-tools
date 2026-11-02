@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.ascii-text-drawer.title'),
   path: '/ascii-text-drawer',
   description: translate('tools.ascii-text-drawer.description'),
-  keywords: ['ascii', 'asciiart', 'text', 'drawer'],
+  keywords: ['ascii', 'asciiart', 'text', 'drawer', 'arte ascii', 'letras', 'texto grande', 'banner', 'fonte'],
   component: () => import('./ascii-text-drawer.vue'),
   icon: Artboard,
   createdAt: new Date('2024-03-03'),

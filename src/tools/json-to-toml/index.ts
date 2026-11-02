@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.json-to-toml.title'),
   path: '/json-to-toml',
   description: translate('tools.json-to-toml.description'),
-  keywords: ['json', 'parse', 'toml', 'convert', 'transform'],
+  keywords: ['json', 'parse', 'toml', 'convert', 'transform', 'conversor', 'converter'],
   component: () => import('./json-to-toml.vue'),
   icon: Braces,
   createdAt: new Date('2023-06-23'),

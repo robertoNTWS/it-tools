@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.roman-numeral-converter.title'),
   path: '/roman-numeral-converter',
   description: translate('tools.roman-numeral-converter.description'),
-  keywords: ['roman', 'arabic', 'converter', 'X', 'I', 'V', 'L', 'C', 'D', 'M'],
+  keywords: ['roman', 'arabic', 'converter', 'X', 'I', 'V', 'L', 'C', 'D', 'M', 'romano', 'numeros romanos', 'algarismos romanos', 'arabico'],
   component: () => import('./roman-numeral-converter.vue'),
   icon: LetterX,
 });

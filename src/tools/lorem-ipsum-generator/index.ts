@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.lorem-ipsum-generator.title'),
   path: '/lorem-ipsum-generator',
   description: translate('tools.lorem-ipsum-generator.description'),
-  keywords: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'placeholder', 'text', 'filler', 'random', 'generator'],
+  keywords: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'placeholder', 'text', 'filler', 'random', 'generator', 'texto ficticio', 'texto de exemplo', 'preenchimento', 'gerador de texto'],
   component: () => import('./lorem-ipsum-generator.vue'),
   icon: AlignJustified,
 });

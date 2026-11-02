@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.toml-to-yaml.title'),
   path: '/toml-to-yaml',
   description: translate('tools.toml-to-yaml.description'),
-  keywords: ['toml', 'yaml', 'convert', 'online', 'transform', 'parse'],
+  keywords: ['toml', 'yaml', 'convert', 'online', 'transform', 'parse', 'conversor', 'converter'],
   component: () => import('./toml-to-yaml.vue'),
   icon: BracketIcon,
   createdAt: new Date('2023-06-23'),

@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.bip39-generator.title'),
   path: '/bip39-generator',
   description: translate('tools.bip39-generator.description'),
-  keywords: ['BIP39', 'passphrase', 'generator', 'mnemonic', 'entropy'],
+  keywords: ['BIP39', 'passphrase', 'generator', 'mnemonic', 'entropy', 'frase', 'mnemonica', 'carteira', 'cripto', 'bitcoin', 'seed'],
   component: () => import('./bip39-generator.vue'),
   icon: AlignJustified,
 });

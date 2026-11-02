@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.url-encoder.title'),
   path: '/url-encoder',
   description: translate('tools.url-encoder.description'),
-  keywords: ['url', 'encode', 'decode', 'percent', '%20', 'format'],
+  keywords: ['url', 'encode', 'decode', 'percent', '%20', 'format', 'codificar', 'decodificar', 'link', 'caracteres especiais'],
   component: () => import('./url-encoder.vue'),
   icon: Link,
 });

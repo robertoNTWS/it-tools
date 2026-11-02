@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.bcrypt.title'),
   path: '/bcrypt',
   description: translate('tools.bcrypt.description'),
-  keywords: ['bcrypt', 'hash', 'compare', 'password', 'salt', 'round', 'storage', 'crypto'],
+  keywords: ['bcrypt', 'hash', 'compare', 'password', 'salt', 'round', 'storage', 'crypto', 'senha', 'criptografia', 'comparar', 'verificar'],
   component: () => import('./bcrypt.vue'),
   icon: LockSquare,
 });

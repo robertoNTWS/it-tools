@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.html-wysiwyg-editor.title'),
   path: '/html-wysiwyg-editor',
   description: translate('tools.html-wysiwyg-editor.description'),
-  keywords: ['html', 'wysiwyg', 'editor', 'p', 'ul', 'ol', 'converter', 'live'],
+  keywords: ['html', 'wysiwyg', 'editor', 'p', 'ul', 'ol', 'converter', 'live', 'texto rico', 'visual', 'formatacao'],
   component: () => import('./html-wysiwyg-editor.vue'),
   icon: Edit,
 });

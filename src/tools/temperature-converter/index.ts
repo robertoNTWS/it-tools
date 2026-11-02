@@ -18,6 +18,8 @@ export const tool = defineTool({
     'Newton',
     'Réaumur',
     'Rømer',
+    'temperatura',
+    'graus',
   ],
   component: () => import('./temperature-converter.vue'),
   icon: Temperature,

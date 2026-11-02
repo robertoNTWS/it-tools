@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.regex-memo.title'),
   path: '/regex-memo',
   description: translate('tools.regex-memo.description'),
-  keywords: ['regex', 'regular', 'expression', 'javascript', 'memo', 'cheatsheet'],
+  keywords: ['regex', 'regular', 'expression', 'javascript', 'memo', 'cheatsheet', 'expressao regular', 'expressoes regulares', 'guia', 'colinha', 'padroes'],
   component: () => import('./regex-memo.vue'),
   icon: BrandJavascript,
   createdAt: new Date('2024-09-20'),

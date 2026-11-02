@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.ipv4-range-expander.title'),
   path: '/ipv4-range-expander',
   description: translate('tools.ipv4-range-expander.description'),
-  keywords: ['ipv4', 'range', 'expander', 'subnet', 'creator', 'cidr'],
+  keywords: ['ipv4', 'range', 'expander', 'subnet', 'creator', 'cidr', 'intervalo', 'faixa', 'ip', 'sub-rede', 'subrede'],
   component: () => import('./ipv4-range-expander.vue'),
   icon: UnfoldMoreOutlined,
   createdAt: new Date('2023-04-19'),

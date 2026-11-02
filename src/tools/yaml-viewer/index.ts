@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.yaml-prettify.title'),
   path: '/yaml-prettify',
   description: translate('tools.yaml-prettify.description'),
-  keywords: ['yaml', 'viewer', 'prettify', 'format'],
+  keywords: ['yaml', 'viewer', 'prettify', 'format', 'formatar', 'formatador', 'indentar', 'yml', 'formatar yaml'],
   component: () => import('./yaml-viewer.vue'),
   icon: AlignJustified,
   createdAt: new Date('2024-01-31'),

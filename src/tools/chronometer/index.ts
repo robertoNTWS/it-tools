@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.chronometer.title'),
   path: '/chronometer',
   description: translate('tools.chronometer.description'),
-  keywords: ['chronometer', 'time', 'lap', 'duration', 'measure', 'pause', 'resume', 'stopwatch'],
+  keywords: ['chronometer', 'time', 'lap', 'duration', 'measure', 'pause', 'resume', 'stopwatch', 'cronometro', 'tempo', 'temporizador', 'medir', 'volta'],
   component: () => import('./chronometer.vue'),
   icon: TimerOutlined,
 });

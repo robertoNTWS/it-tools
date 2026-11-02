@@ -6,7 +6,7 @@ export const tool = defineTool({
   name: translate('tools.email-normalizer.title'),
   path: '/email-normalizer',
   description: translate('tools.email-normalizer.description'),
-  keywords: ['email', 'normalizer'],
+  keywords: ['email', 'normalizer', 'e-mail', 'normalizar', 'duplicados', 'limpeza', 'gmail'],
   component: () => import('./email-normalizer.vue'),
   icon: Mail,
   createdAt: new Date('2024-08-15'),
