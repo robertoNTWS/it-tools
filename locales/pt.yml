@@ -394,3 +394,35 @@ tools:
   text-to-binary:
     title: 'Converter texto em binário (ASCII)'
     description: 'Converta textos para binário (ASCII) e binário de volta para texto, online e na hora. Útil para estudar a codificação de caracteres.'
+
+  ascii-text-drawer:
+    title: 'Gerador de texto em ASCII Art'
+    description: 'Crie texto em ASCII Art online, com várias fontes e estilos, pronto para copiar e usar em terminais, READMEs e comentários de código.'
+
+  email-normalizer:
+    title: 'Normalizador de e-mails'
+    description: 'Normalize endereços de e-mail para um formato padrão e facilite a comparação. Útil para remover duplicados e limpar listas de contatos.'
+
+  json-to-xml:
+    title: 'Conversor de JSON para XML'
+    description: 'Converta JSON para XML online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'
+
+  markdown-to-html:
+    title: 'Conversor de Markdown para HTML'
+    description: 'Converta Markdown para HTML online, veja o resultado e imprima ou salve como PDF. Tudo direto no navegador, sem enviar seus dados.'
+
+  regex-memo:
+    title: 'Regex: guia rápido de expressões regulares'
+    description: 'Guia rápido de regex em JavaScript: caracteres especiais, conjuntos, quantificadores, âncoras e grupos de captura, com exemplos para consultar.'
+
+  regex-tester:
+    title: 'Testador de regex (expressões regulares)'
+    description: 'Teste expressões regulares (regex) online: veja as correspondências, o diagrama da regex e um texto de exemplo, com suporte às flags do JavaScript.'
+
+  safelink-decoder:
+    title: 'Decodificador de Safe Links do Outlook'
+    description: 'Decodifique links Safe Links do Outlook (Microsoft Defender) e descubra a URL original antes de clicar. Tudo direto no navegador.'
+
+  xml-to-json:
+    title: 'Conversor de XML para JSON'
+    description: 'Converta XML para JSON online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'

@@ -10,9 +10,9 @@ test.describe('Tool - Token generator', () => {
   });
 
   test('New token on refresh', async ({ page }) => {
-    const initialToken = await page.getByPlaceholder('The token...').inputValue();
+    const initialToken = await page.getByPlaceholder('O token...').inputValue();
     await page.getByRole('button', { name: 'Gerar novamente' }).click();
-    const newToken = await page.getByPlaceholder('The token...').inputValue();
+    const newToken = await page.getByPlaceholder('O token...').inputValue();
 
     expect(newToken).not.toEqual(initialToken);
   });
