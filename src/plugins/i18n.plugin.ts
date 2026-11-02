@@ -5,7 +5,8 @@ import { createI18n } from 'vue-i18n';
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'en',
+  locale: 'pt',
+  fallbackLocale: 'en',
   messages,
 });
 
@@ -16,6 +17,7 @@ export const i18nPlugin: Plugin = {
 };
 
 export const translate = function (localeKey: string) {
-  const hasKey = i18n.global.te(localeKey, get(i18n.global.locale));
+  // Considera o idioma de fallback para não exibir a chave crua quando falta tradução
+  const hasKey = i18n.global.te(localeKey, get(i18n.global.locale)) || i18n.global.te(localeKey, 'en');
   return hasKey ? i18n.global.t(localeKey) : localeKey;
 };
