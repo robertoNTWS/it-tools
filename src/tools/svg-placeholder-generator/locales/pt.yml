@@ -1,0 +1,18 @@
+tools:
+  svg-placeholder-generator:
+    width: 'Largura (px)'
+    widthPlaceholder: 'Largura do SVG...'
+    background: 'Fundo'
+    height: 'Altura (px)'
+    heightPlaceholder: 'Altura do SVG...'
+    textColor: 'Cor do texto'
+    fontSize: 'Tamanho da fonte'
+    fontSizePlaceholder: 'Tamanho da fonte...'
+    customText: 'Texto personalizado'
+    customTextPlaceholder: 'Padrão: {size}'
+    exactSize: 'Usar tamanho exato'
+    svgHtml: 'Elemento SVG em HTML'
+    svgBase64: 'SVG em Base64'
+    copySvg: 'Copiar SVG'
+    copyBase64: 'Copiar Base64'
+    download: 'Baixar SVG'

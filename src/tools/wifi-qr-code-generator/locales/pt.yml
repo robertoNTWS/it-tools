@@ -1,0 +1,16 @@
+tools:
+  wifi-qrcode-generator:
+    encryption: 'Tipo de segurança'
+    noPassword: 'Sem senha'
+    ssidPlaceholder: 'SSID da sua rede Wi-Fi...'
+    hiddenSsid: 'SSID oculto'
+    password: 'Senha:'
+    passwordPlaceholder: 'Senha da sua rede Wi-Fi...'
+    eapMethod: 'Método EAP'
+    identity: 'Identidade:'
+    identityPlaceholder: 'Sua identidade EAP...'
+    anonymous: 'Anônimo?'
+    eapPhase2: 'Método EAP da fase 2'
+    foreground: 'Cor do QR Code:'
+    background: 'Cor de fundo:'
+    download: 'Baixar QR Code'
