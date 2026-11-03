@@ -1,0 +1,16 @@
+tools:
+  phone-parser-and-formatter:
+    invalid: 'Número de telefone inválido'
+    country: 'País'
+    callingCode: 'Código do país (DDI)'
+    isValid: 'É válido?'
+    isPossible: 'É possível?'
+    type: 'Tipo'
+    international: 'Formato internacional'
+    national: 'Formato nacional'
+    e164: 'Formato E.164'
+    rfc3966: 'Formato RFC3966'
+    defaultCountry: 'País padrão:'
+    inputPlaceholder: 'Digite um número de telefone'
+    inputLabel: 'Número de telefone:'
+    unknown: 'Desconhecido'

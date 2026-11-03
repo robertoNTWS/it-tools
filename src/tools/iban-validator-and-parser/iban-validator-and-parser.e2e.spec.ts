@@ -27,11 +27,11 @@ test.describe('Tool - Iban validator and parser', () => {
     const ibanInfo = await extractIbanInfo({ page });
 
     expect(ibanInfo).toEqual([
-      ['Is IBAN valid ?', 'Yes'],
-      ['Is IBAN a QR-IBAN ?', 'No'],
-      ['Country code', 'DE'],
+      ['O IBAN é válido?', 'Sim'],
+      ['É um QR-IBAN?', 'Não'],
+      ['Código do país', 'DE'],
       ['BBAN', '370400440532013000'],
-      ['IBAN friendly format', 'DE89 3704 0044 0532 0130 00'],
+      ['IBAN em formato legível', 'DE89 3704 0044 0532 0130 00'],
     ]);
   });
 
@@ -41,12 +41,12 @@ test.describe('Tool - Iban validator and parser', () => {
     const ibanInfo = await extractIbanInfo({ page });
 
     expect(ibanInfo).toEqual([
-      ['Is IBAN valid ?', 'No'],
-      ['IBAN errors', 'Wrong account bank branch checksum Wrong IBAN checksum'],
-      ['Is IBAN a QR-IBAN ?', 'No'],
-      ['Country code', 'N/A'],
+      ['O IBAN é válido?', 'Não'],
+      ['Erros do IBAN', 'Wrong account bank branch checksum Wrong IBAN checksum'],
+      ['É um QR-IBAN?', 'Não'],
+      ['Código do país', 'N/A'],
       ['BBAN', 'N/A'],
-      ['IBAN friendly format', 'FR76 3000 6060 0112 3456 7890 189'],
+      ['IBAN em formato legível', 'FR76 3000 6060 0112 3456 7890 189'],
     ]);
   });
 });

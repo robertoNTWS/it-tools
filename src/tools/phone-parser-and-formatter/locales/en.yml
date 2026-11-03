@@ -1,0 +1,16 @@
+tools:
+  phone-parser-and-formatter:
+    invalid: 'Invalid phone number'
+    country: 'Country'
+    callingCode: 'Country calling code'
+    isValid: 'Is valid?'
+    isPossible: 'Is possible?'
+    type: 'Type'
+    international: 'International format'
+    national: 'National format'
+    e164: 'E.164 format'
+    rfc3966: 'RFC3966 format'
+    defaultCountry: 'Default country code:'
+    inputPlaceholder: 'Enter a phone number'
+    inputLabel: 'Phone number:'
+    unknown: 'Unknown'
