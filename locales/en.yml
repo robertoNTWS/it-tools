@@ -426,6 +426,7 @@ tools:
     description: 'Convert XML to JSON'
 
 ui:
+  intlLocale: 'en-US'
   keyValueList:
     yes: 'Yes'
     no: 'No'

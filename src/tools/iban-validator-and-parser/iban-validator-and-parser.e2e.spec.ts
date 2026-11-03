@@ -42,7 +42,7 @@ test.describe('Tool - Iban validator and parser', () => {
 
     expect(ibanInfo).toEqual([
       ['O IBAN é válido?', 'Não'],
-      ['Erros do IBAN', 'Wrong account bank branch checksum Wrong IBAN checksum'],
+      ['Erros do IBAN', 'Checksum da conta ou agência incorreto Checksum do IBAN incorreto'],
       ['É um QR-IBAN?', 'Não'],
       ['Código do país', 'N/A'],
       ['BBAN', 'N/A'],

@@ -17,3 +17,4 @@ tools:
       placeholder: 'O valor em hexadecimal aparecerá aqui...'
     base64:
       placeholder: 'O valor em Base64 aparecerá aqui...'
+    invalidDigit: 'Dígito "{digit}" inválido para a base {base}.'

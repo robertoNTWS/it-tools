@@ -1,4 +1,5 @@
 import { ValidationErrorsIBAN } from 'ibantools';
+import { translate } from '@/plugins/i18n.plugin';
 
 export { getFriendlyErrors };
 
@@ -14,5 +15,6 @@ const ibanErrorToMessage = {
 };
 
 function getFriendlyErrors(errorCodes: ValidationErrorsIBAN[]) {
-  return errorCodes.map(errorCode => ibanErrorToMessage[errorCode]).filter(Boolean);
+  // Mensagem traduzida pelo nome do código de erro; o mapa original define quais erros são exibidos
+  return errorCodes.map(errorCode => (ibanErrorToMessage[errorCode] ? translate(`tools.iban-validator-and-parser.ibanErrors.${ValidationErrorsIBAN[errorCode]}`) : undefined)).filter((message): message is string => Boolean(message));
 }

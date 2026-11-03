@@ -16,8 +16,8 @@ export const i18nPlugin: Plugin = {
   },
 };
 
-export const translate = function (localeKey: string) {
+export const translate = function (localeKey: string, params: Record<string, unknown> = {}) {
   // Considera o idioma de fallback para não exibir a chave crua quando falta tradução
   const hasKey = i18n.global.te(localeKey, get(i18n.global.locale)) || i18n.global.te(localeKey, 'en');
-  return hasKey ? i18n.global.t(localeKey) : localeKey;
+  return hasKey ? i18n.global.t(localeKey, params) : localeKey;
 };

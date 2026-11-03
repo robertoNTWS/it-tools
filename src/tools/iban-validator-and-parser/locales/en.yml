@@ -7,3 +7,12 @@ tools:
     friendly: 'IBAN friendly format'
     inputPlaceholder: 'Enter an IBAN to check for validity...'
     examples: 'Valid IBAN examples'
+    ibanErrors:
+      NoIBANProvided: 'No IBAN provided'
+      NoIBANCountry: 'No IBAN country'
+      WrongBBANLength: 'Wrong BBAN length'
+      WrongBBANFormat: 'Wrong BBAN format'
+      ChecksumNotNumber: 'Checksum is not a number'
+      WrongIBANChecksum: 'Wrong IBAN checksum'
+      WrongAccountBankBranchChecksum: 'Wrong account bank branch checksum'
+      QRIBANNotAllowed: 'QR-IBAN not allowed'

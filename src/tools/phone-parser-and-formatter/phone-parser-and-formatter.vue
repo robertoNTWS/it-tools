@@ -3,11 +3,11 @@ import { getCountries, getCountryCallingCode, parsePhoneNumber } from 'libphonen
 import lookup from 'country-code-lookup';
 import {
   formatTypeToHumanReadable,
+  getCountryDisplayName,
   getDefaultCountryCode,
   getFullCountryName,
 } from './phone-parser-and-formatter.models';
 import { withDefaultOnError } from '@/utils/defaults';
-import { booleanToHumanReadable } from '@/utils/boolean';
 import { useValidation } from '@/composable/validation';
 
 const { t } = useI18n();
@@ -50,11 +50,11 @@ const parsedDetails = computed(() => {
     },
     {
       label: t('tools.phone-parser-and-formatter.isValid'),
-      value: booleanToHumanReadable(parsed.isValid()),
+      value: parsed.isValid() ? t('ui.keyValueList.yes') : t('ui.keyValueList.no'),
     },
     {
       label: t('tools.phone-parser-and-formatter.isPossible'),
-      value: booleanToHumanReadable(parsed.isPossible()),
+      value: parsed.isPossible() ? t('ui.keyValueList.yes') : t('ui.keyValueList.no'),
     },
     {
       label: t('tools.phone-parser-and-formatter.type'),
@@ -80,7 +80,7 @@ const parsedDetails = computed(() => {
 });
 
 const countriesOptions = getCountries().map(code => ({
-  label: `${lookup.byIso(code)?.country || code} (+${getCountryCallingCode(code)})`,
+  label: `${getCountryDisplayName(code) || lookup.byIso(code)?.country || code} (+${getCountryCallingCode(code)})`,
   value: code,
 }));
 </script>

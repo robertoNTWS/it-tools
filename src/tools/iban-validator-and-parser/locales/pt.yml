@@ -7,3 +7,12 @@ tools:
     friendly: 'IBAN em formato legível'
     inputPlaceholder: 'Digite um IBAN para validar...'
     examples: 'Exemplos de IBAN válidos'
+    ibanErrors:
+      NoIBANProvided: 'Nenhum IBAN informado'
+      NoIBANCountry: 'País do IBAN não encontrado'
+      WrongBBANLength: 'Tamanho do BBAN incorreto'
+      WrongBBANFormat: 'Formato do BBAN incorreto'
+      ChecksumNotNumber: 'O checksum não é um número'
+      WrongIBANChecksum: 'Checksum do IBAN incorreto'
+      WrongAccountBankBranchChecksum: 'Checksum da conta ou agência incorreto'
+      QRIBANNotAllowed: 'QR-IBAN não permitido'

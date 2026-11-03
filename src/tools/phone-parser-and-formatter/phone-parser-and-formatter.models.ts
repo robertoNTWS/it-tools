@@ -1,7 +1,8 @@
 import type { CountryCode, NumberType } from 'libphonenumber-js/types';
 import lookup from 'country-code-lookup';
+import { translate } from '@/plugins/i18n.plugin';
 
-export { formatTypeToHumanReadable, getFullCountryName, getDefaultCountryCode };
+export { formatTypeToHumanReadable, getFullCountryName, getDefaultCountryCode, getCountryDisplayName };
 
 const typeToLabel: Record<NonNullable<NumberType>, string> = {
   MOBILE: 'Mobile',
@@ -22,7 +23,7 @@ function formatTypeToHumanReadable(type: NumberType): string | undefined {
     return undefined;
   }
 
-  return typeToLabel[type];
+  return typeToLabel[type] ? translate(`tools.phone-parser-and-formatter.types.${type}`) : undefined;
 }
 
 function getFullCountryName(countryCode: string | undefined) {
@@ -30,7 +31,7 @@ function getFullCountryName(countryCode: string | undefined) {
     return undefined;
   }
 
-  return lookup.byIso(countryCode)?.country;
+  return getCountryDisplayName(countryCode) ?? lookup.byIso(countryCode)?.country;
 }
 
 function getDefaultCountryCode({
@@ -44,4 +45,14 @@ function getDefaultCountryCode({
   }
 
   return (lookup.byIso(countryCode)?.iso2 ?? defaultCode) as CountryCode;
+}
+
+// Nome do país no idioma da interface, pela API nativa do navegador (sem dependência nova)
+function getCountryDisplayName(countryCode: string) {
+  try {
+    return new Intl.DisplayNames([translate('ui.intlLocale')], { type: 'region' }).of(countryCode);
+  }
+  catch {
+    return undefined;
+  }
 }

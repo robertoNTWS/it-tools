@@ -17,3 +17,4 @@ tools:
       placeholder: 'Hexadecimal version will be here...'
     base64:
       placeholder: 'Base64 version will be here...'
+    invalidDigit: 'Invalid digit "{digit}" for base {base}.'

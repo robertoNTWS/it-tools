@@ -3,11 +3,13 @@
 
 import { addMilliseconds, formatRelative } from 'date-fns';
 
-import { enGB } from 'date-fns/locale';
+import { enGB, ptBR } from 'date-fns/locale';
 
 import { formatMsDuration } from './eta-calculator.service';
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
+// Locale do date-fns conforme o idioma da interface
+const dateLocale = computed(() => (locale.value === 'pt' ? ptBR : enGB));
 
 const unitCount = ref(3 * 62);
 const unitPerTimeSpan = ref(3);
@@ -21,7 +23,7 @@ const durationMs = computed(() => {
   return unitCount.value / (unitPerTimeSpan.value / timeSpanMs);
 });
 const endAt = computed(() =>
-  formatRelative(addMilliseconds(startedAt.value, durationMs.value), Date.now(), { locale: enGB }),
+  formatRelative(addMilliseconds(startedAt.value, durationMs.value), Date.now(), { locale: dateLocale.value }),
 );
 </script>
 
@@ -63,7 +65,7 @@ const endAt = computed(() =>
     <n-divider />
     <c-card mb-2>
       <n-statistic :label="t('tools.eta-calculator.totalDuration')">
-        {{ formatMsDuration(durationMs) }}
+        {{ formatMsDuration(durationMs, { locale: dateLocale }) }}
       </n-statistic>
     </c-card>
     <c-card>

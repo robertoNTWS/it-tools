@@ -428,6 +428,7 @@ tools:
     description: 'Converta XML para JSON online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'
 
 ui:
+  intlLocale: 'pt-BR'
   keyValueList:
     yes: 'Sim'
     no: 'Não'
