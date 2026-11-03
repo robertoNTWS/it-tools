@@ -1,0 +1,11 @@
+tools:
+  ascii-text-drawer:
+    inputLabel: 'Your text:'
+    inputPlaceholder: 'Your text to draw'
+    font: 'Font:'
+    fontPlaceholder: 'Select font to use'
+    width: 'Width:'
+    widthPlaceholder: 'Width of the text'
+    loading: 'Loading font...'
+    error: 'Current settings resulted in error.'
+    output: 'Ascii Art text:'

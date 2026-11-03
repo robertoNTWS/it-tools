@@ -1,0 +1,11 @@
+tools:
+  lorem-ipsum-generator:
+    copied: 'Lorem ipsum copied to the clipboard'
+    paragraphs: 'Paragraphs'
+    sentences: 'Sentences per paragraph'
+    words: 'Words per sentence'
+    startWithLorem: 'Start with lorem ipsum ?'
+    asHtml: 'As html ?'
+    outputPlaceholder: 'Your lorem ipsum...'
+    copy: 'Copy'
+    refresh: 'Refresh'

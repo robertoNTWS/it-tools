@@ -1,0 +1,5 @@
+tools:
+  emoji-picker:
+    searchPlaceholder: 'Buscar emojis pelo nome em inglês (ex.: ''smile'')...'
+    noResults: 'Nenhum resultado'
+    searchResult: 'Resultado da busca'

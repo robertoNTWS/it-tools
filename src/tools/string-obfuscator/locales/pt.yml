@@ -1,0 +1,7 @@
+tools:
+  string-obfuscator:
+    inputPlaceholder: 'Digite o texto para ofuscar'
+    inputLabel: 'Texto para ofuscar:'
+    keepFirst: 'Manter os primeiros:'
+    keepLast: 'Manter os últimos:'
+    keepSpaces: 'Manter espaços:'

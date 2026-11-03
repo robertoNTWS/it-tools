@@ -1,0 +1,7 @@
+tools:
+  text-statistics:
+    placeholder: 'Seu texto...'
+    characters: 'Caracteres'
+    words: 'Palavras'
+    lines: 'Linhas'
+    bytes: 'Tamanho em bytes'
