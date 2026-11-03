@@ -15,7 +15,7 @@ test.describe('Tool - JSON diff', () => {
 
     const result = await page.getByTestId('diff-result').innerText();
 
-    expect(result).toContain('The provided JSONs are the same');
+    expect(result).toContain('Os JSONs informados são iguais');
   });
 
   test('Different JSONs have differences listed', async ({ page }) => {

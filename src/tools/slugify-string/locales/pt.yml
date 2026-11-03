@@ -1,0 +1,8 @@
+tools:
+  slugify-string:
+    copied: 'Slug copiado para a área de transferência'
+    inputPlaceholder: 'Digite o texto (ex.: Meu arquivo de teste)'
+    inputLabel: 'Texto para gerar o slug'
+    outputPlaceholder: 'O slug aparecerá aqui (ex.: meu-arquivo-de-teste)'
+    outputLabel: 'Seu slug'
+    copy: 'Copiar slug'

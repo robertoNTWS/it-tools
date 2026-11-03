@@ -22,6 +22,9 @@ import type { Component } from 'vue';
 import MenuBarItem from './menu-bar-item.vue';
 
 const props = defineProps<{ editor: Editor }>();
+
+const { t } = useI18n();
+
 const { editor } = toRefs(props);
 
 type MenuItem =
@@ -38,28 +41,28 @@ const items: MenuItem[] = [
   {
     type: 'button',
     icon: Bold,
-    title: 'Bold',
+    title: t('tools.html-wysiwyg-editor.menu.bold'),
     action: () => editor.value.chain().focus().toggleBold().run(),
     isActive: () => editor.value.isActive('bold'),
   },
   {
     type: 'button',
     icon: Italic,
-    title: 'Italic',
+    title: t('tools.html-wysiwyg-editor.menu.italic'),
     action: () => editor.value.chain().focus().toggleItalic().run(),
     isActive: () => editor.value.isActive('italic'),
   },
   {
     type: 'button',
     icon: Strikethrough,
-    title: 'Strike',
+    title: t('tools.html-wysiwyg-editor.menu.strike'),
     action: () => editor.value.chain().focus().toggleStrike().run(),
     isActive: () => editor.value.isActive('strike'),
   },
   {
     type: 'button',
     icon: Code,
-    title: 'Inline code',
+    title: t('tools.html-wysiwyg-editor.menu.inlineCode'),
     action: () => editor.value.chain().focus().toggleCode().run(),
     isActive: () => editor.value.isActive('code'),
   },
@@ -69,28 +72,28 @@ const items: MenuItem[] = [
   {
     type: 'button',
     icon: H1,
-    title: 'Heading 1',
+    title: t('tools.html-wysiwyg-editor.menu.heading1'),
     action: () => editor.value.chain().focus().toggleHeading({ level: 1 }).run(),
     isActive: () => editor.value.isActive('heading', { level: 1 }),
   },
   {
     type: 'button',
     icon: H2,
-    title: 'Heading 2',
+    title: t('tools.html-wysiwyg-editor.menu.heading2'),
     action: () => editor.value.chain().focus().toggleHeading({ level: 2 }).run(),
     isActive: () => editor.value.isActive('heading', { level: 2 }),
   },
   {
     type: 'button',
     icon: H3,
-    title: 'Heading 3',
+    title: t('tools.html-wysiwyg-editor.menu.heading3'),
     action: () => editor.value.chain().focus().toggleHeading({ level: 3 }).run(),
     isActive: () => editor.value.isActive('heading', { level: 3 }),
   },
   {
     type: 'button',
     icon: H4,
-    title: 'Heading 4',
+    title: t('tools.html-wysiwyg-editor.menu.heading4'),
     action: () => editor.value.chain().focus().toggleHeading({ level: 4 }).run(),
     isActive: () => editor.value.isActive('heading', { level: 4 }),
   },
@@ -100,21 +103,21 @@ const items: MenuItem[] = [
   {
     type: 'button',
     icon: List,
-    title: 'Bullet list',
+    title: t('tools.html-wysiwyg-editor.menu.bulletList'),
     action: () => editor.value.chain().focus().toggleBulletList().run(),
     isActive: () => editor.value.isActive('bulletList'),
   },
   {
     type: 'button',
     icon: ListNumbers,
-    title: 'Ordered list',
+    title: t('tools.html-wysiwyg-editor.menu.orderedList'),
     action: () => editor.value.chain().focus().toggleOrderedList().run(),
     isActive: () => editor.value.isActive('orderedList'),
   },
   {
     type: 'button',
     icon: CodePlus,
-    title: 'Code block',
+    title: t('tools.html-wysiwyg-editor.menu.codeBlock'),
     action: () => editor.value.chain().focus().toggleCodeBlock().run(),
     isActive: () => editor.value.isActive('codeBlock'),
   },
@@ -122,7 +125,7 @@ const items: MenuItem[] = [
   {
     type: 'button',
     icon: Blockquote,
-    title: 'Blockquote',
+    title: t('tools.html-wysiwyg-editor.menu.blockquote'),
     action: () => editor.value.chain().focus().toggleBlockquote().run(),
     isActive: () => editor.value.isActive('blockquote'),
   },
@@ -132,26 +135,26 @@ const items: MenuItem[] = [
   {
     type: 'button',
     icon: TextWrap,
-    title: 'Hard break',
+    title: t('tools.html-wysiwyg-editor.menu.hardBreak'),
     action: () => editor.value.chain().focus().setHardBreak().run(),
   },
   {
     type: 'button',
     icon: ClearFormatting,
-    title: 'Clear format',
+    title: t('tools.html-wysiwyg-editor.menu.clearFormat'),
     action: () => editor.value.chain().focus().clearNodes().unsetAllMarks().run(),
   },
 
   {
     type: 'button',
     icon: ArrowBack,
-    title: 'Undo',
+    title: t('tools.html-wysiwyg-editor.menu.undo'),
     action: () => editor.value.chain().focus().undo().run(),
   },
   {
     type: 'button',
     icon: ArrowForwardUp,
-    title: 'Redo',
+    title: t('tools.html-wysiwyg-editor.menu.redo'),
     action: () => editor.value.chain().focus().redo().run(),
   },
 ];

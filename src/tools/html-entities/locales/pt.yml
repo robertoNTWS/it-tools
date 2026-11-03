@@ -1,0 +1,13 @@
+tools:
+  html-entities:
+    escapeTitle: 'Codificar entidades HTML'
+    unescapeTitle: 'Decodificar entidades HTML'
+    yourString: 'Seu texto:'
+    escapePlaceholder: 'Texto para codificar'
+    escapedLabel: 'Texto codificado:'
+    escapedPlaceholder: 'Texto codificado'
+    escapedInputLabel: 'Texto codificado:'
+    unescapePlaceholder: 'Texto para decodificar'
+    unescapedLabel: 'Texto decodificado:'
+    unescapedPlaceholder: 'Texto decodificado'
+    copy: 'Copiar'

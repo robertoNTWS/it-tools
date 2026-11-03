@@ -1,0 +1,13 @@
+tools:
+  url-parser:
+    invalid: 'URL inválida'
+    inputLabel: 'URL para analisar:'
+    inputPlaceholder: 'Cole a URL aqui...'
+    fields:
+      protocol: 'Protocolo'
+      username: 'Usuário'
+      password: 'Senha'
+      hostname: 'Host'
+      port: 'Porta'
+      pathname: 'Caminho'
+      search: 'Parâmetros'

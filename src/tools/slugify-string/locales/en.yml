@@ -1,0 +1,8 @@
+tools:
+  slugify-string:
+    copied: 'Slug copied to clipboard'
+    inputPlaceholder: 'Put your string here (ex: My file path)'
+    inputLabel: 'Your string to slugify'
+    outputPlaceholder: 'You slug will be generated here (ex: my-file-path)'
+    outputLabel: 'Your slug'
+    copy: 'Copy slug'

@@ -1,0 +1,21 @@
+tools:
+  html-wysiwyg-editor:
+    greeting: 'Olá!'
+    welcome: 'Boas-vindas ao editor HTML WYSIWYG'
+    menu:
+      bold: 'Negrito'
+      italic: 'Itálico'
+      strike: 'Tachado'
+      inlineCode: 'Código inline'
+      heading1: 'Título 1'
+      heading2: 'Título 2'
+      heading3: 'Título 3'
+      heading4: 'Título 4'
+      bulletList: 'Lista com marcadores'
+      orderedList: 'Lista numerada'
+      codeBlock: 'Bloco de código'
+      blockquote: 'Citação'
+      hardBreak: 'Quebra de linha'
+      clearFormat: 'Limpar formatação'
+      undo: 'Desfazer'
+      redo: 'Refazer'

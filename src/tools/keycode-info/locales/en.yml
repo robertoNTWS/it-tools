@@ -1,0 +1,10 @@
+tools:
+  keycode-info:
+    key: 'Key :'
+    keyPlaceholder: 'Key name...'
+    keycode: 'Keycode :'
+    code: 'Code :'
+    location: 'Location :'
+    modifiers: 'Modifiers :'
+    none: 'None'
+    press: 'Press the key on your keyboard you want to get info about this key'

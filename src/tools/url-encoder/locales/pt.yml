@@ -1,0 +1,16 @@
+tools:
+  url-encoder:
+    invalid: 'Não foi possível processar este texto'
+    encodedCopied: 'Texto codificado copiado para a área de transferência'
+    decodedCopied: 'Texto decodificado copiado para a área de transferência'
+    encodeTitle: 'Codificar'
+    decodeTitle: 'Decodificar'
+    yourString: 'Seu texto:'
+    encodePlaceholder: 'Texto para codificar'
+    encodedLabel: 'Texto codificado:'
+    encodedPlaceholder: 'Texto codificado'
+    encodedInputLabel: 'Texto codificado:'
+    decodePlaceholder: 'Texto para decodificar'
+    decodedLabel: 'Texto decodificado:'
+    decodedPlaceholder: 'Texto decodificado'
+    copy: 'Copiar'

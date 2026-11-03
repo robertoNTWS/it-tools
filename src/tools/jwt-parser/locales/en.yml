@@ -1,0 +1,5 @@
+tools:
+  jwt-parser:
+    invalid: 'Invalid JWT'
+    inputLabel: 'JWT to decode'
+    inputPlaceholder: 'Put your token here...'

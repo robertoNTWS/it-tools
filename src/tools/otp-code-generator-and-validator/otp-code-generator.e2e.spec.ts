@@ -13,15 +13,15 @@ test.describe('Tool - OTP code generator', () => {
   });
 
   test('Secret hexa value is computed from provided secret', async ({ page }) => {
-    await page.getByPlaceholder('Paste your TOTP secret...').fill('ITTOOLS');
+    await page.getByPlaceholder('Cole sua chave secreta TOTP...').fill('ITTOOLS');
 
-    const secretInHex = await page.getByPlaceholder('Secret in hex will be displayed here').inputValue();
+    const secretInHex = await page.getByPlaceholder('A chave em hexadecimal aparecerá aqui').inputValue();
 
     expect(secretInHex).toEqual('44e6e72e02');
   });
 
   test('OTP a generated from the provided secret', async ({ page }) => {
-    await page.getByPlaceholder('Paste your TOTP secret...').fill('ITTOOLS');
+    await page.getByPlaceholder('Cole sua chave secreta TOTP...').fill('ITTOOLS');
 
     const previousOtp = await page.getByTestId('previous-otp').innerText();
     const currentOtp = await page.getByTestId('current-otp').innerText();
@@ -33,14 +33,14 @@ test.describe('Tool - OTP code generator', () => {
   });
 
   test('You can generate a new random secret', async ({ page }) => {
-    const initialSecret = await page.getByPlaceholder('Paste your TOTP secret...').inputValue();
+    const initialSecret = await page.getByPlaceholder('Cole sua chave secreta TOTP...').inputValue();
     await page
       .locator('div')
-      .filter({ hasText: /^Secret$/ })
+      .filter({ hasText: /^Chave secreta$/ })
       .getByRole('button')
       .click();
 
-    const newSecret = await page.getByPlaceholder('Paste your TOTP secret...').inputValue();
+    const newSecret = await page.getByPlaceholder('Cole sua chave secreta TOTP...').inputValue();
 
     expect(newSecret).not.toEqual(initialSecret);
   });

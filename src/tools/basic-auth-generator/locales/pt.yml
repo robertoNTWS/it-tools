@@ -1,0 +1,9 @@
+tools:
+  basic-auth-generator:
+    copied: 'Header copiado para a área de transferência'
+    username: 'Usuário'
+    usernamePlaceholder: 'Seu usuário...'
+    password: 'Senha'
+    passwordPlaceholder: 'Sua senha...'
+    header: 'Header Authorization:'
+    copy: 'Copiar header'

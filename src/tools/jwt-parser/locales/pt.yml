@@ -1,0 +1,5 @@
+tools:
+  jwt-parser:
+    invalid: 'JWT inválido'
+    inputLabel: 'JWT para decodificar'
+    inputPlaceholder: 'Cole seu token aqui...'

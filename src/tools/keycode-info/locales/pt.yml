@@ -1,0 +1,10 @@
+tools:
+  keycode-info:
+    key: 'Tecla:'
+    keyPlaceholder: 'Nome da tecla...'
+    keycode: 'Keycode:'
+    code: 'Code:'
+    location: 'Location:'
+    modifiers: 'Modificadores:'
+    none: 'Nenhum'
+    press: 'Pressione a tecla do teclado sobre a qual você quer informações'

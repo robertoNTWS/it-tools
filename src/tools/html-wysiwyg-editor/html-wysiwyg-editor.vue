@@ -5,7 +5,9 @@ import { useStorage } from '@vueuse/core';
 import Editor from './editor/editor.vue';
 import TextareaCopyable from '@/components/TextareaCopyable.vue';
 
-const html = useStorage('html-wysiwyg-editor--html', '<h1>Hey!</h1><p>Welcome to this html wysiwyg editor</p>');
+const { t } = useI18n();
+
+const html = useStorage('html-wysiwyg-editor--html', `<h1>${t('tools.html-wysiwyg-editor.greeting')}</h1><p>${t('tools.html-wysiwyg-editor.welcome')}</p>`);
 
 const formattedHtml = asyncComputed(() => format(html.value, { parser: 'html', plugins: [htmlParser] }), '');
 </script>
