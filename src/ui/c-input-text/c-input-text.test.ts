@@ -1,9 +1,13 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { mount, shallowMount } from '@vue/test-utils';
+import { config, mount, shallowMount } from '@vue/test-utils';
 import { createPinia, setActivePinia } from 'pinia';
 import _ from 'lodash';
 import CInputText from './c-input-text.vue';
 import { useValidation } from '@/composable/validation';
+import { i18nPlugin } from '@/plugins/i18n.plugin';
+
+// O componente usa useI18n() para o placeholder padrão
+config.global.plugins = [i18nPlugin];
 
 describe('CInputText', () => {
   beforeEach(() => {

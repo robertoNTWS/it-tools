@@ -4,6 +4,7 @@ import type { PaletteOption } from './command-palette.types';
 import { useToolStore } from '@/tools/tools.store';
 import { useFuzzySearch } from '@/composable/fuzzySearch';
 import { useStyleStore } from '@/stores/style.store';
+import { translate } from '@/plugins/i18n.plugin';
 
 import SunIcon from '~icons/mdi/white-balance-sunny';
 import GithubIcon from '~icons/mdi/github';
@@ -21,53 +22,53 @@ export const useCommandPaletteStore = defineStore('command-palette', () => {
     ...tool,
     to: tool.path,
     toolCategory: tool.category,
-    category: 'Tools',
+    category: translate('commandPalette.categories.tools'),
   }));
 
   const searchOptions: PaletteOption[] = [
     ...toolsOptions,
     {
-      name: 'Random tool',
-      description: 'Get a random tool from the list.',
+      name: translate('commandPalette.randomTool.name'),
+      description: translate('commandPalette.randomTool.description'),
       action: () => {
         const { path } = _.sample(toolStore.tools)!;
         router.push(path);
       },
       icon: DiceIcon,
-      category: 'Tools',
-      keywords: ['random', 'tool', 'pick', 'choose', 'select'],
+      category: translate('commandPalette.categories.tools'),
+      keywords: ['random', 'tool', 'pick', 'choose', 'select', 'aleatoria', 'sortear', 'escolher'],
       closeOnSelect: true,
     },
     {
-      name: 'Toggle dark mode',
-      description: 'Toggle dark mode on or off.',
+      name: translate('commandPalette.toggleDarkMode.name'),
+      description: translate('commandPalette.toggleDarkMode.description'),
       action: () => styleStore.toggleDark(),
       icon: SunIcon,
-      category: 'Actions',
-      keywords: ['dark', 'theme', 'toggle', 'mode', 'light', 'system'],
+      category: translate('commandPalette.categories.actions'),
+      keywords: ['dark', 'theme', 'toggle', 'mode', 'light', 'system', 'modo escuro', 'modo claro', 'tema', 'alternar'],
     },
     {
-      name: 'Github repository',
+      name: translate('commandPalette.github.name'),
       href: 'https://github.com/CorentinTh/it-tools',
-      category: 'External',
-      description: 'View the source code of it-tools on Github.',
-      keywords: ['github', 'repo', 'repository', 'source', 'code'],
+      category: translate('commandPalette.categories.external'),
+      description: translate('commandPalette.github.description'),
+      keywords: ['github', 'repo', 'repository', 'source', 'code', 'repositorio', 'codigo fonte'],
       icon: GithubIcon,
     },
     {
-      name: 'Report a bug or an issue',
-      description: 'Report a bug or an issue to help improve it-tools.',
+      name: translate('commandPalette.reportBug.name'),
+      description: translate('commandPalette.reportBug.description'),
       href: 'https://github.com/CorentinTh/it-tools/issues/new/choose',
-      category: 'Actions',
-      keywords: ['report', 'issue', 'bug', 'problem', 'error'],
+      category: translate('commandPalette.categories.actions'),
+      keywords: ['report', 'issue', 'bug', 'problem', 'error', 'relatar', 'erro', 'problema'],
       icon: BugIcon,
     },
     {
-      name: 'About',
-      description: 'Learn more about IT-Tools.',
+      name: translate('commandPalette.about.name'),
+      description: translate('commandPalette.about.description'),
       to: '/about',
-      category: 'Pages',
-      keywords: ['about', 'learn', 'more', 'info', 'information'],
+      category: translate('commandPalette.categories.pages'),
+      keywords: ['about', 'learn', 'more', 'info', 'information', 'sobre', 'informacoes'],
       icon: InfoIcon,
     },
   ];

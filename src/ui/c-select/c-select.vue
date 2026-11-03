@@ -26,6 +26,7 @@ const props = withDefaults(
 const emits = defineEmits(['update:value']);
 
 const { options: rawOptions, placeholder, size: sizeName, searchable } = toRefs(props);
+const { t } = useI18n();
 
 const options = computed(() => {
   return rawOptions.value.map((option: string | CSelectOption<T>) => {
@@ -156,7 +157,7 @@ function onSearchInput() {
               {{ selectedOption.label }}
             </span>
             <span v-else class="placeholder" lh-normal>
-              {{ placeholder ?? 'Select an option' }}
+              {{ placeholder ?? t('ui.select.placeholder') }}
             </span>
           </slot>
         </div>

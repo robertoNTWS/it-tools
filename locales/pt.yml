@@ -426,3 +426,39 @@ tools:
   xml-to-json:
     title: 'Conversor de XML para JSON'
     description: 'Converta XML para JSON online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'
+
+ui:
+  fileUpload:
+    title: 'Arraste e solte arquivos aqui ou clique para selecionar'
+    or: 'ou'
+    browse: 'Procurar arquivos'
+  inputText:
+    placeholder: 'Digite o texto'
+  select:
+    placeholder: 'Selecione uma opção'
+  table:
+    description: 'Tabela de dados'
+localeSelector:
+  placeholder: 'Selecione o idioma'
+commandPalette:
+  placeholder: 'Digite para buscar uma ferramenta ou um comando...'
+  categories:
+    tools: 'Ferramentas'
+    actions: 'Ações'
+    external: 'Links externos'
+    pages: 'Páginas'
+  randomTool:
+    name: 'Ferramenta aleatória'
+    description: 'Abre uma ferramenta aleatória da lista.'
+  toggleDarkMode:
+    name: 'Alternar modo escuro'
+    description: 'Liga ou desliga o modo escuro.'
+  github:
+    name: 'Repositório do IT Tools (projeto original) no GitHub'
+    description: 'Veja o código-fonte do projeto original no GitHub.'
+  reportBug:
+    name: 'Relatar um bug no IT Tools (projeto original)'
+    description: 'Abre uma issue no repositório do projeto original.'
+  about:
+    name: 'Sobre'
+    description: 'Saiba mais sobre o Canidev Suíço.'

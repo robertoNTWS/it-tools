@@ -424,3 +424,39 @@ tools:
   xml-to-json:
     title: 'XML to JSON'
     description: 'Convert XML to JSON'
+
+ui:
+  fileUpload:
+    title: 'Drag and drop files here, or click to select files'
+    or: 'or'
+    browse: 'Browse files'
+  inputText:
+    placeholder: 'Input text'
+  select:
+    placeholder: 'Select an option'
+  table:
+    description: 'Data table'
+localeSelector:
+  placeholder: 'Select a language'
+commandPalette:
+  placeholder: 'Type to search a tool or a command...'
+  categories:
+    tools: 'Tools'
+    actions: 'Actions'
+    external: 'External'
+    pages: 'Pages'
+  randomTool:
+    name: 'Random tool'
+    description: 'Get a random tool from the list.'
+  toggleDarkMode:
+    name: 'Toggle dark mode'
+    description: 'Toggle dark mode on or off.'
+  github:
+    name: 'Github repository'
+    description: 'View the source code of it-tools on Github.'
+  reportBug:
+    name: 'Report a bug or an issue'
+    description: 'Report a bug or an issue to help improve it-tools.'
+  about:
+    name: 'About'
+    description: 'Learn more about IT-Tools.'
