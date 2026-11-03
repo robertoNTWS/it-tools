@@ -16,3 +16,4 @@ tools:
     copySvg: 'Copiar SVG'
     copyBase64: 'Copiar Base64'
     download: 'Baixar SVG'
+    imageAlt: 'Imagem placeholder gerada'

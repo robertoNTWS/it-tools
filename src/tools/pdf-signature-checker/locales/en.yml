@@ -10,3 +10,4 @@ tools:
     certificateName: 'Certificate {index}'
     notBefore: 'Not before'
     notAfter: 'Not after'
+    viewPem: 'View PEM cert'

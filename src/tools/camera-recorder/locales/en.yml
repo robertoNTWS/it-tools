@@ -17,3 +17,4 @@ tools:
     recordingNotSupported: 'Video recording is not supported in your browser'
     image: 'Screenshot'
     videoType: 'Video'
+    screenshotAlt: 'screenshot'

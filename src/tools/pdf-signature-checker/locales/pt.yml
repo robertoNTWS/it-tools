@@ -10,3 +10,4 @@ tools:
     certificateName: 'Certificado {index}'
     notBefore: 'Válido a partir de'
     notAfter: 'Válido até'
+    viewPem: 'Ver certificado PEM'

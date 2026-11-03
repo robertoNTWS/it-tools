@@ -16,3 +16,4 @@ tools:
     copySvg: 'Copy svg'
     copyBase64: 'Copy base64'
     download: 'Download svg'
+    imageAlt: 'Image'

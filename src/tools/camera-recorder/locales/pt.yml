@@ -17,3 +17,4 @@ tools:
     recordingNotSupported: 'Seu navegador não permite gravar vídeo'
     image: 'Foto'
     videoType: 'Vídeo'
+    screenshotAlt: 'foto tirada pela webcam'

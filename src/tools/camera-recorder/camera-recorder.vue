@@ -193,7 +193,7 @@ function downloadMedia({ type, value, createdAt }: Media) {
 
     <div grid grid-cols-2 mt-5 gap-2>
       <c-card v-for="({ type, value, createdAt }, index) in medias" :key="index">
-        <img v-if="type === 'image'" :src="value" max-h-full w-full alt="screenshot">
+        <img v-if="type === 'image'" :src="value" max-h-full w-full :alt="t('tools.camera-recorder.screenshotAlt')">
 
         <video v-else :src="value" controls max-h-full w-full />
 

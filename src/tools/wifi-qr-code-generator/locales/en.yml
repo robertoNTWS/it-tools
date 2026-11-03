@@ -14,3 +14,4 @@ tools:
     foreground: 'Foreground color:'
     background: 'Background color:'
     download: 'Download qr-code'
+    qrcodeAlt: 'wifi-qrcode'

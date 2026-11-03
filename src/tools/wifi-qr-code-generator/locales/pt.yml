@@ -14,3 +14,4 @@ tools:
     foreground: 'Cor do QR Code:'
     background: 'Cor de fundo:'
     download: 'Baixar QR Code'
+    qrcodeAlt: 'QR Code da rede Wi-Fi'

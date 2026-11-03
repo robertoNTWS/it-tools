@@ -92,7 +92,7 @@ const { download } = useDownloadFileFromBase64({ source: base64 });
     </div>
   </div>
 
-  <img :src="base64" alt="Image">
+  <img :src="base64" :alt="t('tools.svg-placeholder-generator.imageAlt')">
 </template>
 
 <style lang="less" scoped>
