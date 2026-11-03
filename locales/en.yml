@@ -426,6 +426,14 @@ tools:
     description: 'Convert XML to JSON'
 
 ui:
+  copy:
+    copied: 'Copied to the clipboard'
+    copyTooltip: 'Copy to clipboard'
+    copiedTooltip: 'Copied!'
+  formatTransformer:
+    inputLabel: 'Input'
+    inputPlaceholder: 'Input...'
+    outputLabel: 'Output'
   fileUpload:
     title: 'Drag and drop files here, or click to select files'
     or: 'or'

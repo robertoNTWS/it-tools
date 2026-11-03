@@ -2,8 +2,9 @@
 import { useClipboard } from '@vueuse/core';
 import { useMessage } from 'naive-ui';
 import type { MaybeRefOrGetter } from 'vue';
+import { translate } from '@/plugins/i18n.plugin';
 
-export function useCopy({ source, text = 'Copied to the clipboard', createToast = true }: { source?: MaybeRefOrGetter<string>; text?: string; createToast?: boolean } = {}) {
+export function useCopy({ source, text = translate('ui.copy.copied'), createToast = true }: { source?: MaybeRefOrGetter<string>; text?: string; createToast?: boolean } = {}) {
   const { copy, copied, ...rest } = useClipboard({
     source,
     legacy: true,
