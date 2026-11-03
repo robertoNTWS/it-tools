@@ -428,7 +428,11 @@ tools:
     description: 'Converta XML para JSON online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'
 
 ui:
+  keyValueList:
+    yes: 'Sim'
+    no: 'Não'
   copy:
+    copy: 'Copiar'
     copied: 'Copiado para a área de transferência'
     copyTooltip: 'Copiar para a área de transferência'
     copiedTooltip: 'Copiado!'

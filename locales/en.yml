@@ -426,7 +426,11 @@ tools:
     description: 'Convert XML to JSON'
 
 ui:
+  keyValueList:
+    yes: 'Yes'
+    no: 'No'
   copy:
+    copy: 'Copy'
     copied: 'Copied to the clipboard'
     copyTooltip: 'Copy to clipboard'
     copiedTooltip: 'Copied!'
