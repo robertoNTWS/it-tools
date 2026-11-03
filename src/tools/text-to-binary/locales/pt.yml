@@ -1,0 +1,15 @@
+tools:
+  text-to-binary:
+    invalid: 'O binário deve ser uma sequência ASCII válida, com múltiplos de 8 bits'
+    textToBinary: 'Texto para binário ASCII'
+    binaryToText: 'Binário ASCII para texto'
+    textPlaceholder: 'ex.: ''Olá, mundo'''
+    textLabel: 'Digite o texto para converter em binário'
+    binaryOutputLabel: 'Binário gerado a partir do texto'
+    binaryOutputPlaceholder: 'A representação binária do seu texto aparecerá aqui'
+    copyBinary: 'Copiar binário'
+    binaryPlaceholder: 'ex.: ''01001000 01100101 01101100 01101100 01101111'''
+    binaryLabel: 'Digite o binário para converter em texto'
+    textOutputLabel: 'Texto gerado a partir do binário'
+    textOutputPlaceholder: 'O texto correspondente ao binário aparecerá aqui'
+    copyText: 'Copiar texto'

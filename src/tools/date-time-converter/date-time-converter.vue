@@ -29,6 +29,8 @@ import {
 import { withDefaultOnError } from '@/utils/defaults';
 import { useValidation } from '@/composable/validation';
 
+const { t } = useI18n();
+
 const inputDate = ref('');
 
 const toDate: ToDateMapper = date => new Date(date);
@@ -97,6 +99,14 @@ const formats: DateFormat[] = [
 ];
 
 const formatIndex = ref(6);
+
+// Rótulos traduzidos; o name original continua como identificador (test-id e key)
+const formatLabels: Record<string, string> = {
+  'JS locale date string': t('tools.date-converter.formats.jsLocale'),
+  'UTC format': t('tools.date-converter.formats.utc'),
+  'Excel date/time': t('tools.date-converter.formats.excel'),
+};
+const formatLabel = (name: string) => formatLabels[name] ?? name;
 const now = useNow();
 
 const normalizedDate = computed(() => {
@@ -126,7 +136,7 @@ const validation = useValidation({
   watch: [formatIndex],
   rules: [
     {
-      message: 'This date is invalid for this format',
+      message: t('tools.date-converter.invalid'),
       validator: value =>
         withDefaultOnError(() => {
           if (value === '') {
@@ -155,7 +165,7 @@ function formatDateUsingFormatter(formatter: (date: Date) => string, date?: Date
       <c-input-text
         v-model:value="inputDate"
         autofocus
-        placeholder="Put your date string here..."
+        :placeholder="t('tools.date-converter.inputPlaceholder')"
         clearable
         test-id="date-time-converter-input"
         :validation="validation"
@@ -165,7 +175,7 @@ function formatDateUsingFormatter(formatter: (date: Date) => string, date?: Date
       <c-select
         v-model:value="formatIndex"
         style="flex: 0 0 170px"
-        :options="formats.map(({ name }, i) => ({ label: name, value: i }))"
+        :options="formats.map(({ name }, i) => ({ label: formatLabel(name), value: i }))"
         data-test-id="date-time-converter-format-select"
       />
     </div>
@@ -175,12 +185,12 @@ function formatDateUsingFormatter(formatter: (date: Date) => string, date?: Date
     <input-copyable
       v-for="{ name, fromDate } in formats"
       :key="name"
-      :label="name"
+      :label="formatLabel(name)"
       label-width="150px"
       label-position="left"
       label-align="right"
       :value="formatDateUsingFormatter(fromDate, normalizedDate)"
-      placeholder="Invalid date..."
+      :placeholder="t('tools.date-converter.invalidDate')"
       :test-id="name"
       readonly
       mt-2

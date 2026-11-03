@@ -1,0 +1,13 @@
+tools:
+  color-converter:
+    picker: 'color picker'
+    name: 'name'
+    unknown: 'Unknown'
+    placeholders:
+      hex: 'e.g. #ff0000'
+      rgb: 'e.g. rgb(255, 0, 0)'
+      hsl: 'e.g. hsl(0, 100%, 50%)'
+      hwb: 'e.g. hwb(0, 0%, 0%)'
+      lch: 'e.g. lch(53.24, 104.55, 40.85)'
+      cmyk: 'e.g. cmyk(0, 100%, 100%, 0)'
+      name: 'e.g. red'

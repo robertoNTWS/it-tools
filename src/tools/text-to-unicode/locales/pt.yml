@@ -1,0 +1,14 @@
+tools:
+  text-to-unicode:
+    textToUnicode: 'Texto para Unicode'
+    unicodeToText: 'Unicode para texto'
+    textPlaceholder: 'ex.: ''Olá, Vingadores'''
+    textLabel: 'Digite o texto para converter em Unicode'
+    unicodeOutputLabel: 'Unicode gerado a partir do texto'
+    unicodeOutputPlaceholder: 'A representação Unicode do seu texto aparecerá aqui'
+    copyUnicode: 'Copiar Unicode'
+    unicodePlaceholder: 'Digite o Unicode'
+    unicodeLabel: 'Digite o Unicode para converter em texto'
+    textOutputLabel: 'Texto gerado a partir do Unicode'
+    textOutputPlaceholder: 'O texto correspondente ao Unicode aparecerá aqui'
+    copyText: 'Copiar texto'

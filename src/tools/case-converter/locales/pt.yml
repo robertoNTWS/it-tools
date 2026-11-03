@@ -1,0 +1,6 @@
+tools:
+  case-converter:
+    lowercase: 'Minúsculas:'
+    uppercase: 'Maiúsculas:'
+    inputLabel: 'Seu texto:'
+    inputPlaceholder: 'Seu texto...'

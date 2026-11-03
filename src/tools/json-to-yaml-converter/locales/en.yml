@@ -1,0 +1,6 @@
+tools:
+  json-to-yaml-converter:
+    invalid: 'Provided JSON is not valid.'
+    inputLabel: 'Your JSON'
+    inputPlaceholder: 'Paste your JSON here...'
+    outputLabel: 'YAML from your JSON'

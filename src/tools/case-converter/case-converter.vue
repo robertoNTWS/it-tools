@@ -14,6 +14,8 @@ import {
 } from 'change-case';
 import InputCopyable from '../../components/InputCopyable.vue';
 
+const { t } = useI18n();
+
 const baseConfig = {
   stripRegexp: /[^A-Za-zÀ-ÖØ-öø-ÿ]+/gi,
 };
@@ -22,11 +24,11 @@ const input = ref('lorem ipsum dolor sit amet');
 
 const formats = computed(() => [
   {
-    label: 'Lowercase:',
+    label: t('tools.case-converter.lowercase'),
     value: input.value.toLocaleLowerCase(),
   },
   {
-    label: 'Uppercase:',
+    label: t('tools.case-converter.uppercase'),
     value: input.value.toLocaleUpperCase(),
   },
   {
@@ -93,8 +95,8 @@ const inputLabelAlignmentConfig = {
   <c-card>
     <c-input-text
       v-model:value="input"
-      label="Your string:"
-      placeholder="Your string..."
+      :label="t('tools.case-converter.inputLabel')"
+      :placeholder="t('tools.case-converter.inputPlaceholder')"
       raw-text
       v-bind="inputLabelAlignmentConfig"
     />

@@ -1,0 +1,9 @@
+tools:
+  date-converter:
+    invalid: 'Esta data é inválida para este formato'
+    inputPlaceholder: 'Digite a data aqui...'
+    invalidDate: 'Data inválida...'
+    formats:
+      jsLocale: 'Data local (JS)'
+      utc: 'Formato UTC'
+      excel: 'Data/hora do Excel'

@@ -1,0 +1,15 @@
+tools:
+  base64-file-converter:
+    invalid: 'Base64 inválido'
+    copied: 'Base64 copiado para a área de transferência'
+    toFileTitle: 'Base64 para arquivo'
+    fileName: 'Nome do arquivo'
+    fileNamePlaceholder: 'Nome do arquivo para download'
+    extension: 'Extensão'
+    base64Placeholder: 'Cole aqui o arquivo em Base64...'
+    preview: 'Visualizar imagem'
+    download: 'Baixar arquivo'
+    toBase64Title: 'Arquivo para Base64'
+    uploadTitle: 'Arraste e solte um arquivo aqui ou clique para selecionar'
+    outputPlaceholder: 'O arquivo em Base64 aparecerá aqui'
+    copy: 'Copiar'

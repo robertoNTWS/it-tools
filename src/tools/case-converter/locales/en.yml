@@ -1,0 +1,6 @@
+tools:
+  case-converter:
+    lowercase: 'Lowercase:'
+    uppercase: 'Uppercase:'
+    inputLabel: 'Your string:'
+    inputPlaceholder: 'Your string...'
