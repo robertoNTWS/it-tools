@@ -6,9 +6,15 @@ const { t } = useI18n();
 
 const search = ref('');
 
+// Descrições e categorias traduzidas; o nome oficial do status (ex.: Not Found) fica em inglês
+const translatedCategories = codesByCategories.map(({ category, codes }) => ({
+  category: t(`tools.http-status-codes.categories.c${category.slice(0, 3)}`),
+  codes: codes.map(code => ({ ...code, description: t(`tools.http-status-codes.codes.c${code.code}`) })),
+}));
+
 const { searchResult } = useFuzzySearch({
   search,
-  data: codesByCategories.flatMap(({ codes, category }) => codes.map(code => ({ ...code, category }))),
+  data: translatedCategories.flatMap(({ codes, category }) => codes.map(code => ({ ...code, category }))),
   options: {
     keys: [{ name: 'code', weight: 3 }, { name: 'name', weight: 2 }, 'description', 'category'],
   },
@@ -16,10 +22,10 @@ const { searchResult } = useFuzzySearch({
 
 const codesByCategoryFiltered = computed(() => {
   if (!search.value) {
-    return codesByCategories;
+    return translatedCategories;
   }
 
-  return [{ category: 'Search results', codes: searchResult.value }];
+  return [{ category: t('tools.http-status-codes.searchResults'), codes: searchResult.value }];
 });
 </script>
 
@@ -41,7 +47,7 @@ const codesByCategoryFiltered = computed(() => {
           {{ code }} {{ name }}
         </div>
         <div op-70>
-          {{ description }} {{ type !== 'HTTP' ? `For ${type}.` : '' }}
+          {{ description }} {{ type !== 'HTTP' ? t('tools.http-status-codes.forType', { type }) : '' }}
         </div>
       </c-card>
     </div>

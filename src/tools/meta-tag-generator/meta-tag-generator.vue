@@ -5,7 +5,23 @@ import { image, ogSchemas, twitter, website } from './og-schemas';
 import type { OGSchemaType, OGSchemaTypeElementSelect } from './OGSchemaType.type';
 import TextareaCopyable from '@/components/TextareaCopyable.vue';
 
-const { t } = useI18n();
+const { t, te } = useI18n();
+
+// Textos dos schemas traduzidos pela chave gerada do texto original; sem tradução, mostra o original
+function tr(text?: string) {
+  if (!text) {
+    return text;
+  }
+  const key = `tools.og-meta-generator.schema.${text.trim().toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '').slice(0, 60)}`;
+  return te(key) ? t(key) : text;
+}
+function translateOptions(options: OGSchemaTypeElementSelect['options']): OGSchemaTypeElementSelect['options'] {
+  return options.map(option => ({
+    ...option,
+    label: tr(option.label as string),
+    ...('children' in option && Array.isArray(option.children) ? { children: translateOptions(option.children as OGSchemaTypeElementSelect['options']) } : {}),
+  })) as OGSchemaTypeElementSelect['options'];
+}
 
 // Since type guards do not work in template
 
@@ -56,20 +72,20 @@ const metaTags = computed(() => {
   <div>
     <div v-for="{ name, elements } of sections" :key="name" style="margin-bottom: 15px">
       <div mb-5px>
-        {{ name }}
+        {{ tr(name) }}
       </div>
 
       <n-input-group v-for="{ key, type, label, placeholder, ...element } of elements" :key="key">
         <n-input-group-label style="flex: 0 0 110px">
-          {{ label }}
+          {{ tr(label) }}
         </n-input-group-label>
 
-        <c-input-text v-if="type === 'input'" v-model:value="metadata[key]" :placeholder="placeholder" clearable />
+        <c-input-text v-if="type === 'input'" v-model:value="metadata[key]" :placeholder="tr(placeholder)" clearable />
         <n-dynamic-input
           v-else-if="type === 'input-multiple'"
           v-model:value="metadata[key]"
           :min="1"
-          :placeholder="placeholder"
+          :placeholder="tr(placeholder)"
           :default-value="['']"
           :show-sort-button="true"
         />
@@ -78,8 +94,8 @@ const metaTags = computed(() => {
           v-else-if="type === 'select'"
           v-model:value="metadata[key]"
           w-full
-          :placeholder="placeholder"
-          :options="(element as OGSchemaTypeElementSelect).options"
+          :placeholder="tr(placeholder)"
+          :options="translateOptions((element as OGSchemaTypeElementSelect).options)"
         />
       </n-input-group>
     </div>

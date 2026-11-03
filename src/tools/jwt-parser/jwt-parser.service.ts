@@ -1,6 +1,7 @@
 import jwtDecode, { type JwtHeader, type JwtPayload } from 'jwt-decode';
 import _ from 'lodash';
 import { ALGORITHM_DESCRIPTIONS, CLAIM_DESCRIPTIONS } from './jwt-parser.constants';
+import { translate } from '@/plugins/i18n.plugin';
 
 export { decodeJwt };
 
@@ -18,7 +19,8 @@ function decodeJwt({ jwt }: { jwt: string }) {
 }
 
 function parseClaims({ claim, value }: { claim: string; value: unknown }) {
-  const claimDescription = CLAIM_DESCRIPTIONS[claim];
+  // Descrição traduzida; as constantes continuam definindo quais claims são conhecidas
+  const claimDescription = CLAIM_DESCRIPTIONS[claim] ? translate(`tools.jwt-parser.claims.${claim}`) : undefined;
   const formattedValue = _.isPlainObject(value) || _.isArray(value) ? JSON.stringify(value, null, 3) : _.toString(value);
   const friendlyValue = getFriendlyValue({ claim, value });
 
@@ -36,7 +38,7 @@ function getFriendlyValue({ claim, value }: { claim: string; value: unknown }) {
   }
 
   if (claim === 'alg' && _.isString(value)) {
-    return ALGORITHM_DESCRIPTIONS[value];
+    return ALGORITHM_DESCRIPTIONS[value] ? translate(`tools.jwt-parser.algorithms.${value}`) : undefined;
   }
 
   return undefined;
