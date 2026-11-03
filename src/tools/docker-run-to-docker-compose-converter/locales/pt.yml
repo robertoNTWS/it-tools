@@ -1,0 +1,8 @@
+tools:
+  docker-run-to-docker-compose-converter:
+    inputLabel: 'Seu comando docker run:'
+    inputPlaceholder: 'Cole o comando docker run que deseja converter...'
+    download: 'Baixar docker-compose.yml'
+    notComposable: 'Estas opções não têm equivalente no docker-compose'
+    notImplemented: 'Estas opções ainda não foram implementadas e por isso não foram convertidas para o docker-compose'
+    errors: 'Ocorreram os seguintes erros'

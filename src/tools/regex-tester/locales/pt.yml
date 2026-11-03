@@ -1,0 +1,35 @@
+tools:
+  regex-tester:
+    invalid: 'Regex inválida: {0}'
+    regexLabel: 'Regex para testar:'
+    regexPlaceholder: 'Digite a regex que deseja testar'
+    cheatsheet: 'Ver o guia rápido de expressões regulares'
+    textLabel: 'Texto para testar:'
+    textPlaceholder: 'Digite o texto a ser verificado'
+    matches: 'Correspondências'
+    index: 'Posição no texto'
+    value: 'Valor'
+    captures: 'Capturas'
+    groups: 'Grupos'
+    noMatch: 'Nenhuma correspondência'
+    sample: 'Texto de exemplo que corresponde'
+    diagram: 'Diagrama da regex'
+    flags:
+      global:
+        title: 'Busca global'
+        label: 'Busca global'
+      ignoreCase:
+        title: 'Busca sem diferenciar maiúsculas e minúsculas'
+        label: 'Ignorar maiúsculas/minúsculas'
+      multiline:
+        title: 'Permite que ^ e $ correspondam junto a quebras de linha.'
+        label: 'Multilinha'
+      dotAll:
+        title: 'Permite que . corresponda a quebras de linha.'
+        label: 'Linha única'
+      unicode:
+        title: 'Unicode: trata o padrão como uma sequência de code points Unicode.'
+        label: 'Unicode'
+      unicodeSets:
+        title: 'Uma evolução do modo u, com mais recursos de Unicode.'
+        label: 'Conjuntos Unicode'

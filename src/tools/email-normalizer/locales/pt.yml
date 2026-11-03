@@ -1,0 +1,9 @@
+tools:
+  email-normalizer:
+    inputLabel: 'E-mails para normalizar:'
+    inputPlaceholder: 'Cole seus e-mails aqui (um por linha)...'
+    outputLabel: 'E-mails normalizados:'
+    outputPlaceholder: 'Os e-mails normalizados aparecerão aqui...'
+    clear: 'Limpar e-mails'
+    copy: 'Copiar e-mails normalizados'
+    copied: 'E-mails normalizados copiados para a área de transferência'

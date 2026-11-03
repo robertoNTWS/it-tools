@@ -1,0 +1,6 @@
+tools:
+  json-minify:
+    invalid: 'O JSON informado não é válido.'
+    inputLabel: 'Seu JSON'
+    inputPlaceholder: 'Cole seu JSON aqui...'
+    outputLabel: 'JSON minificado'

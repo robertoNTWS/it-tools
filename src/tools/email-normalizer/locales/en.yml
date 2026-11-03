@@ -1,0 +1,9 @@
+tools:
+  email-normalizer:
+    inputLabel: 'Raw emails to normalize:'
+    inputPlaceholder: 'Put your emails here (one per line)...'
+    outputLabel: 'Normalized emails:'
+    outputPlaceholder: 'Normalized emails will appear here...'
+    clear: 'Clear emails'
+    copy: 'Copy normalized emails'
+    copied: 'Normalized emails copied to the clipboard'

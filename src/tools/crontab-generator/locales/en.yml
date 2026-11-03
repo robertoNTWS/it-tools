@@ -1,0 +1,47 @@
+tools:
+  crontab-generator:
+    invalid: 'This cron is invalid'
+    verbose: 'Verbose'
+    use24Hour: 'Use 24 hour time format'
+    daysStartAtZero: 'Days start at 0'
+    symbol: 'Symbol'
+    meaning: 'Meaning'
+    example: 'Example'
+    equivalent: 'Equivalent'
+    diagram:
+      seconds: '[optional] seconds (0 - 59)'
+      minute: 'minute (0 - 59)'
+      hour: 'hour (0 - 23)'
+      dayOfMonth: 'day of month (1 - 31)'
+      month: 'month (1 - 12) OR jan,feb,mar,apr ...'
+      dayOfWeek: 'day of week (0 - 6, sunday=0) OR sun,mon ...'
+      command: 'command'
+    helpers:
+      any:
+        meaning: 'Any value'
+        equivalent: 'Every minute'
+      range:
+        meaning: 'Range of values'
+        equivalent: 'Minutes 1 through 10'
+      list:
+        meaning: 'List of values'
+        equivalent: 'At minutes 1 and 10'
+      step:
+        meaning: 'Step values'
+        equivalent: 'Every 10 minutes'
+      yearly:
+        meaning: 'Once every year at midnight of 1 January'
+      annually:
+        meaning: 'Same as {''@''}yearly'
+      monthly:
+        meaning: 'Once a month at midnight on the first day'
+      weekly:
+        meaning: 'Once a week at midnight on Sunday morning'
+      daily:
+        meaning: 'Once a day at midnight'
+      midnight:
+        meaning: 'Same as {''@''}daily'
+      hourly:
+        meaning: 'Once an hour at the beginning of the hour'
+      reboot:
+        meaning: 'Run at startup'

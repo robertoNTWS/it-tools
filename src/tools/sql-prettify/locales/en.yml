@@ -1,0 +1,15 @@
+tools:
+  sql-prettify:
+    dialect: 'Dialect'
+    standardSql: 'Standard SQL'
+    keywordCase: 'Keyword case'
+    upper: 'UPPERCASE'
+    lower: 'lowercase'
+    preserve: 'Preserve'
+    indentStyle: 'Indent style'
+    standard: 'Standard'
+    tabularLeft: 'Tabular left'
+    tabularRight: 'Tabular right'
+    inputLabel: 'Your SQL query'
+    inputPlaceholder: 'Put your SQL query here...'
+    outputLabel: 'Prettify version of your query'

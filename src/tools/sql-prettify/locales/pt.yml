@@ -1,0 +1,15 @@
+tools:
+  sql-prettify:
+    dialect: 'Dialeto'
+    standardSql: 'SQL padrão'
+    keywordCase: 'Caixa das palavras-chave'
+    upper: 'MAIÚSCULAS'
+    lower: 'minúsculas'
+    preserve: 'Manter original'
+    indentStyle: 'Estilo de indentação'
+    standard: 'Padrão'
+    tabularLeft: 'Tabular à esquerda'
+    tabularRight: 'Tabular à direita'
+    inputLabel: 'Sua consulta SQL'
+    inputPlaceholder: 'Cole sua consulta SQL aqui...'
+    outputLabel: 'Consulta formatada'

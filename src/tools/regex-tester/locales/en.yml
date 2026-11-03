@@ -1,0 +1,35 @@
+tools:
+  regex-tester:
+    invalid: 'Invalid regex: {0}'
+    regexLabel: 'Regex to test:'
+    regexPlaceholder: 'Put the regex to test'
+    cheatsheet: 'See Regular Expression Cheatsheet'
+    textLabel: 'Text to match:'
+    textPlaceholder: 'Put the text to match'
+    matches: 'Matches'
+    index: 'Index in text'
+    value: 'Value'
+    captures: 'Captures'
+    groups: 'Groups'
+    noMatch: 'No match'
+    sample: 'Sample matching text'
+    diagram: 'Regex Diagram'
+    flags:
+      global:
+        title: 'Global search'
+        label: 'Global search.'
+      ignoreCase:
+        title: 'Case-insensitive search'
+        label: 'Case-insensitive search.'
+      multiline:
+        title: 'Allows ^ and $ to match next to newline characters.'
+        label: 'Multiline'
+      dotAll:
+        title: 'Allows . to match newline characters.'
+        label: 'Singleline'
+      unicode:
+        title: 'Unicode; treat a pattern as a sequence of Unicode code points.'
+        label: 'Unicode'
+      unicodeSets:
+        title: 'An upgrade to the u mode with more Unicode features.'
+        label: 'Unicode Sets'

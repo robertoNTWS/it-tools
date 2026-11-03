@@ -1,0 +1,5 @@
+tools:
+  random-port-generator:
+    copied: 'Porta copiada para a área de transferência'
+    copy: 'Copiar'
+    refresh: 'Gerar novamente'
