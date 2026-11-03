@@ -1,13 +1,18 @@
 <script setup lang="ts">
 import { useThemeVars } from 'naive-ui';
-import Memo from './git-memo.content.md';
+import MemoEn from './git-memo.content.md';
+import MemoPt from './git-memo.content.pt.md';
 
 const themeVars = useThemeVars();
+const { locale } = useI18n();
+
+// Um arquivo .md por idioma; o inglês é o padrão para os demais idiomas
+const Memo = computed(() => (locale.value === 'pt' ? MemoPt : MemoEn));
 </script>
 
 <template>
   <div>
-    <Memo />
+    <component :is="Memo" />
   </div>
 </template>
 
