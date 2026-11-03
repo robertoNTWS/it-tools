@@ -1,0 +1,13 @@
+tools:
+  mac-address-generator:
+    uppercase: 'Maiúsculas'
+    lowercase: 'Minúsculas'
+    none: 'Nenhum'
+    copied: 'Endereços MAC copiados para a área de transferência'
+    quantity: 'Quantidade:'
+    prefix: 'Prefixo do endereço MAC:'
+    prefixPlaceholder: 'Defina um prefixo, ex.: 64:16:7F'
+    case: 'Caixa:'
+    separator: 'Separador:'
+    refresh: 'Gerar novamente'
+    copy: 'Copiar'

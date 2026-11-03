@@ -1,0 +1,21 @@
+tools:
+  ipv4-subnet-calculator:
+    invalid: 'We cannot parse this address, check the format'
+    noBroadcast: 'No broadcast address with this mask'
+    unknownClass: 'Unknown class type'
+    inputLabel: 'An IPv4 address with or without mask'
+    inputPlaceholder: 'The ipv4 address...'
+    previous: 'Previous block'
+    next: 'Next block'
+    fields:
+      netmask: 'Netmask'
+      networkAddress: 'Network address'
+      networkMask: 'Network mask'
+      networkMaskBinary: 'Network mask in binary'
+      cidr: 'CIDR notation'
+      wildcard: 'Wildcard mask'
+      size: 'Network size'
+      first: 'First address'
+      last: 'Last address'
+      broadcast: 'Broadcast address'
+      ipClass: 'IP class'

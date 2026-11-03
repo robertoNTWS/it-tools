@@ -1,0 +1,13 @@
+tools:
+  ipv4-range-expander:
+    start: 'Start address'
+    end: 'End address'
+    addresses: 'Addresses in range'
+    invalid: 'Invalid ipv4 address'
+    startPlaceholder: 'Start IPv4 address...'
+    endPlaceholder: 'End IPv4 address...'
+    invalidCombination: 'Invalid combination of start and end IPv4 address'
+    invalidCombinationText: 'The end IPv4 address is lower than the start IPv4 address. This is not valid and no result could be calculated. In the most cases the solution to solve this problem is to change start and end address.'
+    switch: 'Switch start and end IPv4 address'
+    oldValue: 'old value'
+    newValue: 'new value'

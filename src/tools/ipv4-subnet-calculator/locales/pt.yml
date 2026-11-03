@@ -1,0 +1,21 @@
+tools:
+  ipv4-subnet-calculator:
+    invalid: 'Não foi possível interpretar este endereço; confira o formato'
+    noBroadcast: 'Não há endereço de broadcast com esta máscara'
+    unknownClass: 'Classe desconhecida'
+    inputLabel: 'Endereço IPv4, com ou sem máscara'
+    inputPlaceholder: 'Endereço IPv4...'
+    previous: 'Bloco anterior'
+    next: 'Próximo bloco'
+    fields:
+      netmask: 'Máscara (CIDR)'
+      networkAddress: 'Endereço de rede'
+      networkMask: 'Máscara de rede'
+      networkMaskBinary: 'Máscara de rede em binário'
+      cidr: 'Notação CIDR'
+      wildcard: 'Máscara curinga (wildcard)'
+      size: 'Tamanho da rede'
+      first: 'Primeiro endereço'
+      last: 'Último endereço'
+      broadcast: 'Endereço de broadcast'
+      ipClass: 'Classe do IP'

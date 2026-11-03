@@ -1,0 +1,8 @@
+tools:
+  ipv6-ula-generator:
+    first: 'First routable block:'
+    last: 'Last routable block:'
+    info: 'This tool uses the first method suggested by IETF using the current timestamp plus the mac address, sha1 hashed, and the lower 40 bits to generate your random ULA.'
+    inputPlaceholder: 'Type a MAC address'
+    inputLabel: 'MAC address:'
+    infoTitle: 'Info'

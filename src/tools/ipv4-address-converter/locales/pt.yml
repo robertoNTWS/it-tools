@@ -1,0 +1,8 @@
+tools:
+  ipv4-address-converter:
+    binary: 'Binário: '
+    ipv6Short: 'IPv6 (curto): '
+    invalid: 'Endereço IPv4 inválido'
+    inputLabel: 'Endereço IPv4:'
+    inputPlaceholder: 'Endereço IPv4...'
+    outputPlaceholder: 'Informe um endereço IPv4 válido'

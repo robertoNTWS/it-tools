@@ -1,0 +1,13 @@
+tools:
+  mac-address-generator:
+    uppercase: 'Uppercase'
+    lowercase: 'Lowercase'
+    none: 'None'
+    copied: 'MAC addresses copied to the clipboard'
+    quantity: 'Quantity:'
+    prefix: 'MAC address prefix:'
+    prefixPlaceholder: 'Set a prefix, e.g. 64:16:7F'
+    case: 'Case:'
+    separator: 'Separator:'
+    refresh: 'Refresh'
+    copy: 'Copy'
