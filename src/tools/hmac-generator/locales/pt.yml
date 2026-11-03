@@ -1,0 +1,15 @@
+tools:
+  hmac-generator:
+    inputPlaceholder: 'Texto para calcular o hash...'
+    inputLabel: 'Texto para calcular o hash'
+    secretPlaceholder: 'Digite a chave secreta...'
+    secret: 'Chave secreta'
+    hashFunction: 'Função de hash'
+    hashFunctionPlaceholder: 'Selecione uma função de hash...'
+    encoding: 'Codificação do resultado'
+    encodingPlaceholder: 'Selecione a codificação do resultado...'
+    binary: 'Binário (base 2)'
+    base64url: 'Base64url (base 64 com caracteres seguros para URL)'
+    outputPlaceholder: 'O resultado do HMAC...'
+    outputLabel: 'HMAC do seu texto'
+    copy: 'Copiar HMAC'

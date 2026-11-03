@@ -1,0 +1,11 @@
+tools:
+  uuid-generator:
+    invalid: 'UUID inválido'
+    copied: 'UUIDs copiados para a área de transferência'
+    version: 'Versão do UUID'
+    quantity: 'Quantidade'
+    quantityPlaceholder: 'Quantidade de UUIDs'
+    name: 'Nome'
+    outputPlaceholder: 'Seus UUIDs'
+    copy: 'Copiar'
+    refresh: 'Gerar novamente'

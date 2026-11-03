@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import { translate } from '@/plugins/i18n.plugin';
 
 export { getPasswordCrackTimeEstimation, getCharsetLength };
 
@@ -11,24 +12,24 @@ function prettifyExponentialNotation(exponentialNotation: number) {
 
 function getHumanFriendlyDuration({ seconds }: { seconds: number }) {
   if (seconds <= 0.001) {
-    return 'Instantly';
+    return translate('tools.password-strength-analyser.duration.instantly');
   }
 
   if (seconds <= 1) {
-    return 'Less than a second';
+    return translate('tools.password-strength-analyser.duration.lessThanASecond');
   }
 
   const timeUnits = [
-    { unit: 'millenium', secondsInUnit: 31536000000, format: prettifyExponentialNotation, plural: 'millennia' },
-    { unit: 'century', secondsInUnit: 3153600000, plural: 'centuries' },
-    { unit: 'decade', secondsInUnit: 315360000, plural: 'decades' },
-    { unit: 'year', secondsInUnit: 31536000, plural: 'years' },
-    { unit: 'month', secondsInUnit: 2592000, plural: 'months' },
-    { unit: 'week', secondsInUnit: 604800, plural: 'weeks' },
-    { unit: 'day', secondsInUnit: 86400, plural: 'days' },
-    { unit: 'hour', secondsInUnit: 3600, plural: 'hours' },
-    { unit: 'minute', secondsInUnit: 60, plural: 'minutes' },
-    { unit: 'second', secondsInUnit: 1, plural: 'seconds' },
+    { unit: translate('tools.password-strength-analyser.duration.millennium.one'), secondsInUnit: 31536000000, format: prettifyExponentialNotation, plural: translate('tools.password-strength-analyser.duration.millennium.other') },
+    { unit: translate('tools.password-strength-analyser.duration.century.one'), secondsInUnit: 3153600000, plural: translate('tools.password-strength-analyser.duration.century.other') },
+    { unit: translate('tools.password-strength-analyser.duration.decade.one'), secondsInUnit: 315360000, plural: translate('tools.password-strength-analyser.duration.decade.other') },
+    { unit: translate('tools.password-strength-analyser.duration.year.one'), secondsInUnit: 31536000, plural: translate('tools.password-strength-analyser.duration.year.other') },
+    { unit: translate('tools.password-strength-analyser.duration.month.one'), secondsInUnit: 2592000, plural: translate('tools.password-strength-analyser.duration.month.other') },
+    { unit: translate('tools.password-strength-analyser.duration.week.one'), secondsInUnit: 604800, plural: translate('tools.password-strength-analyser.duration.week.other') },
+    { unit: translate('tools.password-strength-analyser.duration.day.one'), secondsInUnit: 86400, plural: translate('tools.password-strength-analyser.duration.day.other') },
+    { unit: translate('tools.password-strength-analyser.duration.hour.one'), secondsInUnit: 3600, plural: translate('tools.password-strength-analyser.duration.hour.other') },
+    { unit: translate('tools.password-strength-analyser.duration.minute.one'), secondsInUnit: 60, plural: translate('tools.password-strength-analyser.duration.minute.other') },
+    { unit: translate('tools.password-strength-analyser.duration.second.one'), secondsInUnit: 1, plural: translate('tools.password-strength-analyser.duration.second.other') },
   ];
 
   return _.chain(timeUnits)

@@ -1,0 +1,12 @@
+tools:
+  pdf-signature-checker:
+    uploadTitle: 'Drag and drop a PDF file here, or click to select a file'
+    noSignatures: 'No signatures found in the provided file.'
+    signatureCertificates: 'Signature {index} certificates :'
+    validityPeriod: 'Validity period'
+    issuedBy: 'Issued by'
+    issuedTo: 'Issued to'
+    pemCertificate: 'PEM certificate'
+    certificateName: 'Certificate {index}'
+    notBefore: 'Not before'
+    notAfter: 'Not after'

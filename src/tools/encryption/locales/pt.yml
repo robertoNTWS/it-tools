@@ -1,0 +1,14 @@
+tools:
+  encryption:
+    decryptError: 'Não foi possível descriptografar o texto'
+    encryptTitle: 'Criptografar'
+    decryptTitle: 'Descriptografar'
+    yourText: 'Seu texto:'
+    inputPlaceholder: 'Digite o texto'
+    secret: 'Sua chave secreta:'
+    algorithm: 'Algoritmo:'
+    encrypted: 'Texto criptografado:'
+    outputPlaceholder: 'Resultado'
+    encryptedInput: 'Texto criptografado:'
+    errorTitle: 'Erro ao descriptografar'
+    decrypted: 'Texto descriptografado:'

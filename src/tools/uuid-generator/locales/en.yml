@@ -1,0 +1,11 @@
+tools:
+  uuid-generator:
+    invalid: 'Invalid UUID'
+    copied: 'UUIDs copied to the clipboard'
+    version: 'UUID version'
+    quantity: 'Quantity'
+    quantityPlaceholder: 'UUID quantity'
+    name: 'Name'
+    outputPlaceholder: 'Your uuids'
+    copy: 'Copy'
+    refresh: 'Refresh'

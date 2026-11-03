@@ -1,0 +1,43 @@
+tools:
+  password-strength-analyser:
+    passwordLength: 'Tamanho da senha:'
+    entropy: 'Entropia:'
+    charsetSize: 'Tamanho do conjunto de caracteres:'
+    score: 'Pontuação:'
+    inputPlaceholder: 'Digite uma senha...'
+    crackDuration: 'Tempo para quebrar esta senha por força bruta'
+    note: 'Observação:'
+    noteText: 'A força calculada considera o tempo necessário para quebrar a senha por força bruta e não leva em conta a possibilidade de um ataque de dicionário.'
+    duration:
+      instantly: 'Instantaneamente'
+      lessThanASecond: 'Menos de um segundo'
+      millennium:
+        one: 'milênio'
+        other: 'milênios'
+      century:
+        one: 'século'
+        other: 'séculos'
+      decade:
+        one: 'década'
+        other: 'décadas'
+      year:
+        one: 'ano'
+        other: 'anos'
+      month:
+        one: 'mês'
+        other: 'meses'
+      week:
+        one: 'semana'
+        other: 'semanas'
+      day:
+        one: 'dia'
+        other: 'dias'
+      hour:
+        one: 'hora'
+        other: 'horas'
+      minute:
+        one: 'minuto'
+        other: 'minutos'
+      second:
+        one: 'segundo'
+        other: 'segundos'

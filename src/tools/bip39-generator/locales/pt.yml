@@ -1,0 +1,23 @@
+tools:
+  bip39-generator:
+    entropyLength: 'A entropia deve ter entre 16 e 32 caracteres e ser múltipla de 4'
+    entropyHex: 'A entropia deve ser um texto hexadecimal'
+    invalidMnemonic: 'Frase mnemônica inválida'
+    entropyCopied: 'Entropia copiada para a área de transferência'
+    passphraseCopied: 'Frase copiada para a área de transferência'
+    language: 'Idioma:'
+    entropy: 'Entropia (seed):'
+    entropyPlaceholder: 'Seu texto...'
+    passphrase: 'Frase (mnemônica):'
+    passphrasePlaceholder: 'Sua frase mnemônica...'
+    languages:
+      english: 'Inglês'
+      chineseSimplified: 'Chinês simplificado'
+      chineseTraditional: 'Chinês tradicional'
+      czech: 'Tcheco'
+      french: 'Francês'
+      italian: 'Italiano'
+      japanese: 'Japonês'
+      korean: 'Coreano'
+      portuguese: 'Português'
+      spanish: 'Espanhol'

@@ -3,12 +3,13 @@ import type { SignatureInfo } from '../pdf-signature-checker.types';
 
 const props = defineProps<{ signature: SignatureInfo }>();
 const { signature } = toRefs(props);
+const { t } = useI18n();
 
 const tableHeaders = {
-  validityPeriod: 'Validity period',
-  issuedBy: 'Issued by',
-  issuedTo: 'Issued to',
-  pemCertificate: 'PEM certificate',
+  validityPeriod: t('tools.pdf-signature-checker.validityPeriod'),
+  issuedBy: t('tools.pdf-signature-checker.issuedBy'),
+  issuedTo: t('tools.pdf-signature-checker.issuedTo'),
+  pemCertificate: t('tools.pdf-signature-checker.pemCertificate'),
 };
 
 const certs = computed(() => signature.value.meta.certs.map((certificate, index) => ({
@@ -17,7 +18,7 @@ const certs = computed(() => signature.value.meta.certs.map((certificate, index)
     notBefore: new Date(certificate.validityPeriod.notBefore).toLocaleString(),
     notAfter: new Date(certificate.validityPeriod.notAfter).toLocaleString(),
   },
-  certificateName: `Certificate ${index + 1}`,
+  certificateName: t('tools.pdf-signature-checker.certificateName', { index: index + 1 }),
 })),
 );
 </script>
@@ -28,10 +29,10 @@ const certs = computed(() => signature.value.meta.certs.map((certificate, index)
       <template #validityPeriod="{ value }">
         <c-key-value-list
           :items="[{
-            label: 'Not before',
+            label: t('tools.pdf-signature-checker.notBefore'),
             value: value.notBefore,
           }, {
-            label: 'Not after',
+            label: t('tools.pdf-signature-checker.notAfter'),
             value: value.notAfter,
           }]"
         />
