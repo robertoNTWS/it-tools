@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { RouterView, useRoute } from 'vue-router';
 import { NGlobalStyle, NMessageProvider, NNotificationProvider, darkTheme, dateEnUS, datePtBR, enUS, ptBR } from 'naive-ui';
+import { useHead } from '@vueuse/head';
 import { darkThemeOverrides, lightThemeOverrides } from './themes';
 import { layouts } from './layouts';
 import { useStyleStore } from './stores/style.store';
 import { palette } from './palette';
+import { SITE_URL } from './brand';
 
 const route = useRoute();
 const layout = computed(() => route?.meta?.layout ?? layouts.base);
@@ -14,6 +16,12 @@ const theme = computed(() => (styleStore.isDarkTheme ? darkTheme : null));
 const themeOverrides = computed(() => (styleStore.isDarkTheme ? darkThemeOverrides : lightThemeOverrides));
 
 const { locale } = useI18n();
+
+// Endereço canônico de cada página (SEO): sem isso, todas as ferramentas apontavam para a Home
+useHead({
+  link: computed(() => [{ rel: 'canonical', href: `${SITE_URL}${route.path}` }]),
+  meta: computed(() => [{ property: 'og:url', content: `${SITE_URL}${route.path}` }]),
+});
 
 // Textos internos do naive-ui (placeholders, datas) no idioma da interface
 const naiveLocale = computed(() => (locale.value === 'pt' ? ptBR : enUS));

@@ -17,6 +17,8 @@ const siderPosition = computed(() => (isSmallScreen.value ? 'absolute' : 'static
       :show-trigger="false"
       :native-scrollbar="false"
       :position="siderPosition"
+      role="navigation"
+      :aria-label="$t('home.nav.menuLabel')"
     >
       <slot name="sider" />
     </n-layout-sider>

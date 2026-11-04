@@ -5,6 +5,7 @@ import NotFound from './pages/404.page.vue';
 import { tools } from './tools';
 import { config } from './config';
 import { routes as demoRoutes } from './ui/demo/demo.routes';
+import { SITE_NAME } from './brand';
 
 const toolsRoutes = tools.map(({ path, name, component, ...config }) => ({
   path,
@@ -36,6 +37,15 @@ const router = createRouter({
     ...(config.app.env === 'development' ? demoRoutes : []),
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
   ],
+});
+
+// Título da aba já no início da navegação: ferramentas com pacote grande (ex.: lista de emojis)
+// demoram segundos para carregar, e o título da página anterior ficava até lá. O tool.layout
+// reaplica o mesmo título (traduzido) depois, via @vueuse/head.
+router.beforeEach((to) => {
+  if (to.meta?.isTool && to.meta.name) {
+    document.title = `${String(to.meta.name)} - ${SITE_NAME}`;
+  }
 });
 
 export default router;
