@@ -6,6 +6,7 @@ import { Heart, Home2, Menu2 } from '@vicons/tabler';
 
 import { storeToRefs } from 'pinia';
 import HeroGradient from '../assets/hero-gradient.svg?component';
+import Logotipo from '../assets/brand/logotipo-claro.svg?component';
 import MenuLayout from '../components/MenuLayout.vue';
 import NavbarButtons from '../components/NavbarButtons.vue';
 import { useStyleStore } from '@/stores/style.store';
@@ -39,7 +40,7 @@ const tools = computed<ToolCategory[]>(() => [
         <HeroGradient class="gradient" />
         <div class="text-wrapper">
           <div class="title">
-            IT - TOOLS
+            <Logotipo class="logo" role="img" aria-label="Canidev Suíço" />
           </div>
           <div class="divider" />
           <div class="subtitle">
@@ -202,15 +203,22 @@ const tools = computed<ToolCategory[]>(() => [
     color: #fff;
 
     .title {
-      font-size: 25px;
-      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 6px;
+
+      .logo {
+        height: 34px;
+        width: auto;
+        max-width: 88%;
+      }
     }
 
     .divider {
       width: 50px;
       height: 2px;
       border-radius: 4px;
-      background-color: v-bind('themeVars.primaryColor');
+      background-color: rgba(255, 255, 255, 0.5);
       margin: 0 auto 5px;
     }
 
