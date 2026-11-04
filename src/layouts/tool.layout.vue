@@ -70,6 +70,8 @@ useHead(head);
 
   ::v-deep(& > *) {
     flex: 0 1 600px;
+    // Permite encolher no celular; conteúdo largo rola dentro do próprio bloco
+    min-width: 0;
   }
 }
 
@@ -83,11 +85,15 @@ useHead(head);
     width: 100%;
 
     .n-h1 {
-      opacity: 0.9;
-      font-size: 40px;
-      font-weight: 400;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: -0.015em;
       margin: 0;
-      line-height: 1;
+      line-height: 1.15;
+
+      @media (max-width: 600px) {
+        font-size: 26px;
+      }
     }
 
     .separator {

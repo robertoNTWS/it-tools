@@ -94,7 +94,7 @@ function switchToBlock({ count = 1 }: { count?: number }) {
       mb-4
     />
 
-    <div v-if="networkInfo">
+    <div v-if="networkInfo" overflow-x-auto>
       <n-table>
         <tbody>
           <tr v-for="{ getValue, label, undefinedFallback } in sections" :key="label">

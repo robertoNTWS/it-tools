@@ -128,10 +128,14 @@ const tools = computed<ToolCategory[]>(() => [
             target="_blank"
             class="support-button"
             :bordered="false"
+            :aria-label="$t('home.buyMeACoffee')"
             @click="() => tracker.trackEvent({ eventName: 'Support button clicked' })"
           >
-            {{ $t('home.buyMeACoffee') }}
-            <NIcon v-if="!styleStore.isSmallScreen" :component="Heart" ml-2 />
+            <!-- No celular, só o ícone, para não espremer a busca -->
+            <template v-if="!styleStore.isSmallScreen">
+              {{ $t('home.buyMeACoffee') }}
+            </template>
+            <NIcon :component="Heart" :class="{ 'ml-2': !styleStore.isSmallScreen }" />
           </c-button>
         </c-tooltip>
       </div>
