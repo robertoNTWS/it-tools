@@ -11,7 +11,7 @@ const errorCorrectionLevel = ref<QRCodeErrorCorrectionLevel>('medium');
 
 const errorCorrectionLevels = ['low', 'medium', 'quartile', 'high'];
 
-const text = ref('https://it-tools.tech');
+const text = ref('https://canidevsuico.tec.br');
 const { qrcode } = useQRCode({
   text,
   color: {

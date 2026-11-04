@@ -6,6 +6,6 @@ test.describe('Tool - MAC address generator', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Gerador de endereço MAC - IT Tools');
+    await expect(page).toHaveTitle('Gerador de endereço MAC - Canidev Suíço');
   });
 });

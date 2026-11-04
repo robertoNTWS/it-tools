@@ -6,7 +6,7 @@ test.describe('Tool - Text to Unicode', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Converter texto em Unicode - IT Tools');
+    await expect(page).toHaveTitle('Converter texto em Unicode - Canidev Suíço');
   });
 
   test('Text to unicode conversion', async ({ page }) => {

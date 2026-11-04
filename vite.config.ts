@@ -58,14 +58,15 @@ export default defineConfig({
       registerType: 'autoUpdate',
       strategies: 'generateSW',
       manifest: {
-        name: 'IT Tools',
-        description: 'Aggregated set of useful tools for developers.',
+        name: 'Canidev Suíço',
+        short_name: 'Canidev',
+        description: 'Ferramentas online para desenvolvedores, em português e direto no navegador.',
         display: 'standalone',
-        lang: 'fr-FR',
+        lang: 'pt-BR',
         start_url: `${baseUrl}?utm_source=pwa&utm_medium=pwa`,
         orientation: 'any',
         theme_color: '#2F5BEA',
-        background_color: '#f1f5f9',
+        background_color: '#F7F8FB',
         icons: [
           {
             src: '/favicon-16x16.png',

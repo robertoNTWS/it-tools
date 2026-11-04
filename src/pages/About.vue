@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head';
+import { SITE_NAME } from '@/brand';
 
 const { t } = useI18n();
-useHead({ title: computed(() => `${t('home.nav.aboutLabel')} - IT Tools`) });
+useHead({ title: computed(() => `${t('home.nav.aboutLabel')} - ${SITE_NAME}`) });
 </script>
 
 <template>

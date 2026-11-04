@@ -6,7 +6,7 @@ test.describe('Tool - Token generator', () => {
   });
 
   test('Has title', async ({ page }) => {
-    await expect(page).toHaveTitle('Gerador de senha e token aleatório - IT Tools');
+    await expect(page).toHaveTitle('Gerador de senha e token aleatório - Canidev Suíço');
   });
 
   test('New token on refresh', async ({ page }) => {

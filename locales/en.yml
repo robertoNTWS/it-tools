@@ -18,6 +18,7 @@ home:
     twitterXAccount: 'IT-Tools X account'
     thankYou: 'Thank you!'
   nav:
+    menuLabel: 'Tools menu'
     github: 'GitHub repository'
     githubRepository: 'IT-Tools GitHub repository'
     twitterX: 'X account'
@@ -473,3 +474,6 @@ commandPalette:
   about:
     name: 'About'
     description: 'Learn more about IT-Tools.'
+footer:
+  basedOn: 'Canidev Suíço, based on'
+  license: 'GPL-3.0 license'

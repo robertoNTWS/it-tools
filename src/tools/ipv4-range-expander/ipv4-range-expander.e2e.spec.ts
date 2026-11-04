@@ -6,7 +6,7 @@ test.describe('Tool - IPv4 range expander', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Intervalo de IPs para CIDR (IPv4) - IT Tools');
+    await expect(page).toHaveTitle('Intervalo de IPs para CIDR (IPv4) - Canidev Suíço');
   });
 
   test('Calculates correct for valid input', async ({ page }) => {

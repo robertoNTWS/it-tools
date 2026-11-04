@@ -6,7 +6,7 @@ test.describe('Tool - Text to ASCII binary', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Converter texto em binário (ASCII) - IT Tools');
+    await expect(page).toHaveTitle('Converter texto em binário (ASCII) - Canidev Suíço');
   });
 
   test('Text to binary conversion', async ({ page }) => {

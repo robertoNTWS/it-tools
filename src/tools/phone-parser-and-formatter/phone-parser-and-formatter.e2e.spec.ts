@@ -6,6 +6,6 @@ test.describe('Tool - Phone parser and formatter', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Validar e formatar número de telefone - IT Tools');
+    await expect(page).toHaveTitle('Validar e formatar número de telefone - Canidev Suíço');
   });
 });

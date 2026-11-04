@@ -6,7 +6,7 @@ test.describe('Tool - Color converter', () => {
   });
 
   test('Has title', async ({ page }) => {
-    await expect(page).toHaveTitle('Conversor de cores (HEX, RGB, HSL) - IT Tools');
+    await expect(page).toHaveTitle('Conversor de cores (HEX, RGB, HSL) - Canidev Suíço');
   });
 
   test('Color is converted from its name to other formats', async ({ page }) => {

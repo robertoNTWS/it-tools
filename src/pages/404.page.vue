@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head';
+import { SITE_NAME } from '@/brand';
 
 const { t } = useI18n();
-useHead({ title: computed(() => `${t('404.notFound')} - IT Tools`) });
+useHead({ title: computed(() => `${t('404.notFound')} - ${SITE_NAME}`) });
 </script>
 
 <template>

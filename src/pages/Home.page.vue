@@ -7,11 +7,12 @@ import ColoredCard from '../components/ColoredCard.vue';
 import ToolCard from '../components/ToolCard.vue';
 import { useToolStore } from '@/tools/tools.store';
 import { config } from '@/config';
+import { SITE_NAME } from '@/brand';
 
 const toolStore = useToolStore();
 
 const { t } = useI18n();
-useHead({ title: computed(() => `IT Tools - ${t('home.subtitle')}`) });
+useHead({ title: computed(() => `${SITE_NAME} - ${t('home.subtitle')}`) });
 
 const favoriteTools = computed(() => toolStore.favoriteTools);
 
@@ -23,6 +24,9 @@ function onUpdateFavoriteTools() {
 
 <template>
   <div class="pt-16px">
+    <h1 class="sr-only">
+      {{ SITE_NAME }}: {{ $t('home.subtitle') }}
+    </h1>
     <div class="grid-wrapper">
       <div class="grid grid-cols-1 gap-12px lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4">
         <ColoredCard v-if="config.showBanner" :title="$t('home.follow.title')" :icon="IconHeart">

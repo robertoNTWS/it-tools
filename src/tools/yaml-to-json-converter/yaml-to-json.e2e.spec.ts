@@ -6,7 +6,7 @@ test.describe('Tool - Yaml to json', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Conversor de YAML para JSON - IT Tools');
+    await expect(page).toHaveTitle('Conversor de YAML para JSON - Canidev Suíço');
   });
 
   test('Yaml is parsed and output clean json', async ({ page }) => {

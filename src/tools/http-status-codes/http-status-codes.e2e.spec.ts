@@ -6,6 +6,6 @@ test.describe('Tool - Http status codes', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Códigos de status HTTP - IT Tools');
+    await expect(page).toHaveTitle('Códigos de status HTTP - Canidev Suíço');
   });
 });

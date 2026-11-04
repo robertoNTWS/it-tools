@@ -6,6 +6,7 @@ import type { HeadObject } from '@vueuse/head';
 import BaseLayout from './base.layout.vue';
 import FavoriteButton from '@/components/FavoriteButton.vue';
 import type { Tool } from '@/tools/tools.types';
+import { SITE_NAME } from '@/brand';
 
 const route = useRoute();
 const { t } = useI18n();
@@ -16,7 +17,7 @@ const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.descrip
 
 // Usa os textos traduzidos (reativos ao idioma) em vez de route.meta, que fica congelado no idioma inicial
 const head = computed<HeadObject>(() => ({
-  title: `${toolTitle.value} - IT Tools`,
+  title: `${toolTitle.value} - ${SITE_NAME}`,
   meta: [
     {
       name: 'description',

@@ -6,7 +6,7 @@ test.describe('Tool - JSON to CSV', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Conversor de JSON para CSV - IT Tools');
+    await expect(page).toHaveTitle('Conversor de JSON para CSV - Canidev Suíço');
   });
 
   test('Provided json is converted to csv', async ({ page }) => {

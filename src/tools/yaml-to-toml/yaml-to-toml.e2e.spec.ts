@@ -6,7 +6,7 @@ test.describe('Tool - YAML to TOML', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Conversor de YAML para TOML - IT Tools');
+    await expect(page).toHaveTitle('Conversor de YAML para TOML - Canidev Suíço');
   });
 
   test('JSON is parsed and outputs clean TOML', async ({ page }) => {

@@ -6,7 +6,7 @@ test.describe('Tool - XML formatter', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Formatador de XML - IT Tools');
+    await expect(page).toHaveTitle('Formatador de XML - Canidev Suíço');
   });
 
   test('XML is converted into a human readable format', async ({ page }) => {

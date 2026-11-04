@@ -6,7 +6,7 @@ test.describe('Tool - Percentage calculator', () => {
   });
 
   test('Has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('Calculadora de porcentagem - IT Tools');
+    await expect(page).toHaveTitle('Calculadora de porcentagem - Canidev Suíço');
   });
 
   test('Correctly works out percentages', async ({ page }) => {
