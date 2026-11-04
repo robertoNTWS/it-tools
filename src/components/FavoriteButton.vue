@@ -29,7 +29,9 @@ function toggleFavorite(event: MouseEvent) {
       variant="text"
       circle
       :type="buttonType"
-      :style="{ opacity: isFavorite ? 1 : 0.2 }"
+      :style="{ opacity: isFavorite ? 1 : 0.55 }"
+      :aria-label="isFavorite ? $t('favoriteButton.remove') : $t('favoriteButton.add')"
+      :aria-pressed="isFavorite"
       @click="toggleFavorite"
     >
       <icon-mdi-heart />

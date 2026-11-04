@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { RouterView, useRoute } from 'vue-router';
-import { NGlobalStyle, NMessageProvider, NNotificationProvider, darkTheme } from 'naive-ui';
+import { NGlobalStyle, NMessageProvider, NNotificationProvider, darkTheme, dateEnUS, datePtBR, enUS, ptBR } from 'naive-ui';
 import { darkThemeOverrides, lightThemeOverrides } from './themes';
 import { layouts } from './layouts';
 import { useStyleStore } from './stores/style.store';
+import { palette } from './palette';
 
 const route = useRoute();
 const layout = computed(() => route?.meta?.layout ?? layouts.base);
@@ -14,6 +15,15 @@ const themeOverrides = computed(() => (styleStore.isDarkTheme ? darkThemeOverrid
 
 const { locale } = useI18n();
 
+// Textos internos do naive-ui (placeholders, datas) no idioma da interface
+const naiveLocale = computed(() => (locale.value === 'pt' ? ptBR : enUS));
+const naiveDateLocale = computed(() => (locale.value === 'pt' ? datePtBR : dateEnUS));
+
+// Cor do contorno de foco (acessibilidade: foco visível ao navegar pelo teclado)
+watchEffect(() => {
+  document.documentElement.style.setProperty('--focus-ring', styleStore.isDarkTheme ? palette.dark.primary : palette.light.primary);
+});
+
 syncRef(
   locale,
   useStorage('locale', locale),
@@ -21,7 +31,7 @@ syncRef(
 </script>
 
 <template>
-  <n-config-provider :theme="theme" :theme-overrides="themeOverrides">
+  <n-config-provider :theme="theme" :theme-overrides="themeOverrides" :locale="naiveLocale" :date-locale="naiveDateLocale">
     <NGlobalStyle />
     <NMessageProvider placement="bottom">
       <NNotificationProvider placement="bottom-right">
@@ -34,6 +44,17 @@ syncRef(
 </template>
 
 <style>
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* O naive-ui remove o contorno dos links do menu; destaca o item inteiro quando o link tem foco */
+.n-menu .n-menu-item-content:has(a:focus-visible) {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: -2px;
+}
+
 body {
   min-height: 100%;
   margin: 0;

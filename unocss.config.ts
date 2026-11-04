@@ -24,6 +24,8 @@ export default defineConfig({
       'line-dark': palette.dark.border,
       'canvas': palette.light.background,
       'canvas-dark': palette.dark.background,
+      'muted': palette.light.textMuted,
+      'muted-dark': palette.dark.textMuted,
     },
   },
   shortcuts: {

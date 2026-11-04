@@ -113,7 +113,7 @@ function activateOption(option: PaletteOption) {
 <template>
   <div flex-1>
     <c-button w-full important:justify-start @click="isModalOpen = true">
-      <span flex items-center gap-3 op-40>
+      <span flex items-center gap-3 op-70>
 
         <icon-mdi-search />
         {{ $t('search.label') }}
