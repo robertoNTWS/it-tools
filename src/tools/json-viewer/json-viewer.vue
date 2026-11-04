@@ -10,7 +10,8 @@ const { t } = useI18n();
 
 const inputElement = ref<HTMLElement>();
 
-const rawJson = useStorage('json-prettify:raw-json', '{"hello": "world", "foo": "bar"}');
+// Não salva no navegador o texto digitado (LGPD); preferências continuam salvas
+const rawJson = ref('{"hello": "world", "foo": "bar"}');
 const indentSize = useStorage('json-prettify:indent-size', 3);
 const sortKeys = useStorage('json-prettify:sort-keys', true);
 const cleanJson = computed(() => withDefaultOnError(() => formatJson({ rawJson, indentSize, sortKeys }), ''));

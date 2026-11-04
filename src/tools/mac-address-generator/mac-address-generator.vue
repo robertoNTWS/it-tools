@@ -8,7 +8,8 @@ import { usePartialMacAddressValidation } from '@/utils/macAddress';
 const { t } = useI18n();
 
 const amount = useStorage('mac-address-generator-amount', 1);
-const macAddressPrefix = useStorage('mac-address-generator-prefix', '64:16:7F');
+// Não salva no navegador o texto digitado (LGPD); preferências continuam salvas
+const macAddressPrefix = ref('64:16:7F');
 
 const prefixValidation = usePartialMacAddressValidation(macAddressPrefix);
 

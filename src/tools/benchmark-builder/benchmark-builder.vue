@@ -9,7 +9,8 @@ import { useCopy } from '@/composable/copy';
 
 const { t } = useI18n();
 
-const suites = useStorage('benchmark-builder:suites', [
+// Não salva no navegador o texto digitado (LGPD); preferências continuam salvas
+const suites = ref([
   { title: 'Suite 1', data: [5, 10] },
   { title: 'Suite 2', data: [8, 12] },
 ]);

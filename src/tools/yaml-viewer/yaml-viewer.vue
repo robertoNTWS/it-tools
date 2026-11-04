@@ -10,7 +10,8 @@ const { t } = useI18n();
 
 const inputElement = ref<HTMLElement>();
 
-const rawYaml = useStorage('yaml-prettify:raw-yaml', '');
+// Não salva no navegador o texto digitado (LGPD); preferências continuam salvas
+const rawYaml = ref('');
 const indentSize = useStorage('yaml-prettify:indent-size', 2);
 const sortKeys = useStorage('yaml-prettify:sort-keys', false);
 

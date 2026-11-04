@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Netmask } from 'netmask';
-import { useStorage } from '@vueuse/core';
 import { ArrowLeft, ArrowRight } from '@vicons/tabler';
 import { getIPClass } from './ipv4-subnet-calculator.models';
 import { withDefaultOnError } from '@/utils/defaults';
@@ -9,7 +8,8 @@ import SpanCopyable from '@/components/SpanCopyable.vue';
 
 const { t } = useI18n();
 
-const ip = useStorage('ipv4-subnet-calculator:ip', '192.168.0.1/24');
+// Não salva no navegador o texto digitado (LGPD); preferências continuam salvas
+const ip = ref('192.168.0.1/24');
 
 const getNetworkInfo = (address: string) => new Netmask(address.trim());
 

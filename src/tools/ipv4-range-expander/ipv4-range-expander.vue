@@ -8,8 +8,9 @@ import { useValidation } from '@/composable/validation';
 
 const { t } = useI18n();
 
-const rawStartAddress = useStorage('ipv4-range-expander:startAddress', '192.168.1.1');
-const rawEndAddress = useStorage('ipv4-range-expander:endAddress', '192.168.6.255');
+// Não salva no navegador o texto digitado (LGPD); preferências continuam salvas
+const rawStartAddress = ref('192.168.1.1');
+const rawEndAddress = ref('192.168.6.255');
 
 const result = computed(() => calculateCidr({ startIp: rawStartAddress.value, endIp: rawEndAddress.value }));
 

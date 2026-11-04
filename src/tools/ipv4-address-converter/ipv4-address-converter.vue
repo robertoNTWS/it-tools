@@ -5,7 +5,8 @@ import { useValidation } from '@/composable/validation';
 
 const { t } = useI18n();
 
-const rawIpAddress = useStorage('ipv4-converter:ip', '192.168.1.1');
+// Não salva no navegador o texto digitado (LGPD); preferências continuam salvas
+const rawIpAddress = ref('192.168.1.1');
 
 const convertedSections = computed(() => {
   const ipInDecimal = ipv4ToInt({ ip: rawIpAddress.value });
