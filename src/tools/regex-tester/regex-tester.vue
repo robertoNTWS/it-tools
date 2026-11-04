@@ -4,11 +4,12 @@ import { render } from '@regexper/render';
 import type { ShadowRootExpose } from 'vue-shadow-dom';
 import { matchRegex } from './regex-tester.service';
 import { useValidation } from '@/composable/validation';
-import { useQueryParamOrStorage } from '@/composable/queryParams';
+import { useQueryParam } from '@/composable/queryParams';
 
 const { t } = useI18n();
 
-const regex = useQueryParamOrStorage({ name: 'regex', storageName: 'regex-tester:regex', defaultValue: '' });
+// Não salva no navegador o texto digitado (LGPD); preferências continuam salvas
+const regex = useQueryParam({ name: 'regex', defaultValue: '' });
 const text = ref('');
 const global = ref(true);
 const ignoreCase = ref(false);
@@ -25,7 +26,8 @@ const regexValidation = useValidation({
       message: t('tools.regex-tester.invalid', ['{0}']),
       validator: value => new RegExp(value),
       getErrorMessage: (value) => {
-        const _ = new RegExp(value);
+        // O .test() impede o minificador de remover o new RegExp (sem ele, o erro sumia em produção)
+        new RegExp(value).test('');
         return '';
       },
     },
