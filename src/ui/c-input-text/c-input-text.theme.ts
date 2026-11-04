@@ -1,17 +1,18 @@
 import { defineThemes } from '../theme/theme.models';
+import { palette } from '@/palette';
 
 export const { useTheme } = defineThemes({
   dark: {
-    backgroundColor: '#333333',
-    borderColor: '#333333',
+    backgroundColor: palette.dark.surfaceRaised,
+    borderColor: palette.dark.border,
 
     focus: {
-      backgroundColor: '#1ea54c1a',
+      backgroundColor: palette.dark.primaryFaded,
     },
   },
   light: {
-    backgroundColor: '#ffffff',
-    borderColor: '#e0e0e69e',
+    backgroundColor: palette.light.surface,
+    borderColor: palette.light.border,
 
     focus: {
       backgroundColor: '#ffffff',

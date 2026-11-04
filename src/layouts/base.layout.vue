@@ -153,8 +153,8 @@ const tools = computed<ToolCategory[]>(() => [
 // }
 
 .support-button {
-  background: rgb(37, 99, 108);
-  background: linear-gradient(48deg, rgba(37, 99, 108, 1) 0%, rgba(59, 149, 111, 1) 60%, rgba(20, 160, 88, 1) 100%);
+  background: #1B2A6B;
+  background: linear-gradient(48deg, #1B2A6B 0%, #2447C2 60%, #2F5BEA 100%);
   color: #fff !important;
   transition: padding ease 0.2s !important;
 

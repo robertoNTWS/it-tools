@@ -1,11 +1,40 @@
 import type { GlobalThemeOverrides } from 'naive-ui';
+import { palette } from './palette';
+
+const { light, dark } = palette;
 
 export const lightThemeOverrides: GlobalThemeOverrides = {
+  common: {
+    primaryColor: light.primary,
+    primaryColorHover: light.primaryHover,
+    primaryColorPressed: light.primaryPressed,
+    primaryColorSuppl: light.primaryHover,
+    bodyColor: light.background,
+    cardColor: light.surface,
+    modalColor: light.surface,
+    popoverColor: light.surface,
+    borderColor: light.border,
+    dividerColor: light.border,
+    textColorBase: light.text,
+    textColor1: light.text,
+    textColor2: light.text,
+    textColor3: light.textMuted,
+  },
+
   Menu: {
     itemHeight: '32px',
   },
 
-  Layout: { color: '#f1f5f9' },
+  Layout: {
+    color: light.background,
+    siderColor: light.surface,
+    siderBorderColor: light.border,
+  },
+
+  Card: {
+    color: light.surface,
+    borderColor: light.border,
+  },
 
   AutoComplete: {
     peers: {
@@ -16,19 +45,37 @@ export const lightThemeOverrides: GlobalThemeOverrides = {
 
 export const darkThemeOverrides: GlobalThemeOverrides = {
   common: {
-    primaryColor: '#1ea54cFF',
-    primaryColorHover: '#36AD6AFF',
-    primaryColorPressed: '#0C7A43FF',
-    primaryColorSuppl: '#36AD6AFF',
+    primaryColor: dark.primary,
+    primaryColorHover: dark.primaryHover,
+    primaryColorPressed: dark.primaryPressed,
+    primaryColorSuppl: dark.primaryHover,
+    bodyColor: dark.background,
+    cardColor: dark.surface,
+    modalColor: dark.surface,
+    popoverColor: dark.surfaceRaised,
+    borderColor: dark.border,
+    dividerColor: dark.border,
+    textColorBase: dark.text,
+    textColor1: dark.text,
+    textColor2: dark.text,
+    textColor3: dark.textMuted,
+  },
+
+  // Azul claro do tema escuro pede texto escuro no botão principal (contraste ≥ 4,5:1)
+  Button: {
+    textColorPrimary: dark.onPrimary,
+    textColorHoverPrimary: dark.onPrimary,
+    textColorPressedPrimary: dark.onPrimary,
+    textColorFocusPrimary: dark.onPrimary,
   },
 
   Notification: {
-    color: '#333333',
+    color: dark.surfaceRaised,
   },
 
   AutoComplete: {
     peers: {
-      InternalSelectMenu: { height: '500px', color: '#1e1e1e' },
+      InternalSelectMenu: { height: '500px', color: dark.surface },
     },
   },
 
@@ -37,18 +84,18 @@ export const darkThemeOverrides: GlobalThemeOverrides = {
   },
 
   Layout: {
-    color: '#1c1c1c',
-    siderColor: '#232323',
+    color: dark.background,
+    siderColor: dark.surface,
     siderBorderColor: 'transparent',
   },
 
   Card: {
-    color: '#232323',
-    borderColor: '#282828',
+    color: dark.surface,
+    borderColor: dark.border,
   },
 
   Table: {
-    tdColor: '#232323',
-    thColor: '#353535',
+    tdColor: dark.surface,
+    thColor: dark.surfaceRaised,
   },
 };
