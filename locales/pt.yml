@@ -477,5 +477,6 @@ commandPalette:
     name: 'Sobre'
     description: 'Saiba mais sobre o Canidev Suíço.'
 footer:
+  sourceCode: 'Código desta versão'
   basedOn: 'Canidev Suíço, baseado no'
   license: 'licença GPL-3.0'

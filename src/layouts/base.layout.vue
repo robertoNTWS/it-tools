@@ -73,6 +73,11 @@ const tools = computed<ToolCategory[]>(() => [
             </c-link>
             · {{ $t('footer.license') }}
           </div>
+          <div>
+            <c-link target="_blank" rel="noopener" href="https://github.com/robertoNTWS/it-tools">
+              {{ $t('footer.sourceCode') }}
+            </c-link>
+          </div>
         </div>
       </div>
     </template>

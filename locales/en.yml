@@ -475,5 +475,6 @@ commandPalette:
     name: 'About'
     description: 'Learn more about IT-Tools.'
 footer:
+  sourceCode: 'Source code of this version'
   basedOn: 'Canidev Suíço, based on'
   license: 'GPL-3.0 license'
