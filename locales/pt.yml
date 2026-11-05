@@ -477,6 +477,65 @@ commandPalette:
     name: 'Sobre'
     description: 'Saiba mais sobre o Canidev Suíço.'
 footer:
+  privacy: 'Privacidade'
+  cookiePreferences: 'Preferências de cookies'
   sourceCode: 'Código desta versão'
   basedOn: 'Canidev Suíço, baseado no'
   license: 'licença GPL-3.0'
+
+consent:
+  label: 'Aviso de cookies'
+  message: 'Usamos o Google Analytics para medir as visitas, só se você aceitar. O que você digita nas ferramentas nunca sai do seu navegador.'
+  accept: 'Aceitar'
+  reject: 'Recusar'
+  privacy: 'Política de privacidade'
+privacy:
+  title: 'Política de privacidade'
+  content: |
+    # Política de privacidade
+
+    Última atualização: 4 de novembro de 2026.
+
+    O Canidev Suíço reúne ferramentas que funcionam no seu navegador. Esta página explica quais dados são tratados quando você usa o site.
+
+    ## Responsável
+
+    Roberto Guilherme. Contato: [roberto.ntws{'@'}gmail.com](mailto:roberto.ntws{'@'}gmail.com).
+
+    ## O que você digita nas ferramentas
+
+    Tudo o que você digita ou envia às ferramentas (textos, arquivos, senhas, tokens) é processado no seu próprio dispositivo e não é enviado a nenhum servidor nem ao Google Analytics.
+
+    O testador de regex coloca a expressão no endereço da página para que você possa compartilhar o link. Essa parte do endereço não é enviada ao Google Analytics.
+
+    ## Medição de audiência (Google Analytics)
+
+    Só com o seu consentimento, usamos o Google Analytics 4 para saber quantas pessoas visitam o site e quais ferramentas são mais usadas. São coletados:
+
+    - páginas visitadas (sem os parâmetros do endereço), data e hora;
+    - tipo de aparelho, navegador, sistema operacional e idioma;
+    - região aproximada (cidade e país), estimada pelo Google a partir do endereço IP, que não é armazenado;
+    - cliques no botão de apoio ao projeto original.
+
+    O Google Analytics grava os cookies `_ga` e `_ga_<ID>`, que duram até 2 anos. Os dados detalhados ficam guardados no Google Analytics por 2 meses. Não usamos esses dados para anúncios nem para personalização, e os sinais do Google ficam desativados. O Google trata esses dados como operador; veja a [política de privacidade do Google](https://policies.google.com/privacy?hl=pt-BR).
+
+    A base legal é o seu consentimento (art. 7º, inciso I, da LGPD). Você pode aceitar, recusar ou mudar a escolha a qualquer momento em **Preferências de cookies**, no rodapé do menu. Se recusar depois de ter aceitado, os cookies do Google Analytics são apagados.
+
+    ## Dados guardados no seu navegador
+
+    O site guarda no armazenamento local do navegador (localStorage) apenas preferências: idioma, tema claro ou escuro, ferramentas favoritas, estado do menu, opções de algumas ferramentas (como a indentação) e a sua escolha sobre cookies. Esses dados não saem do seu dispositivo e são apagados quando você limpa os dados do site no navegador.
+
+    ## Serviços de terceiros
+
+    - **Google Analytics**, somente com o seu consentimento, como descrito acima.
+    - **unpkg.com**: o gerador de texto em ASCII Art baixa as fontes desse serviço quando você o usa. Como em qualquer acesso a um site, ele recebe o seu endereço IP.
+    - **Vercel**, a hospedagem do site, que pode registrar dados técnicos de acesso (como IP e navegador) para segurança e funcionamento do serviço.
+    - **Links externos** (GitHub, X, Buy me a coffee e outros) levam a sites com políticas próprias.
+
+    ## Seus direitos
+
+    Pela LGPD, você pode pedir confirmação e acesso aos dados, correção, eliminação e informações sobre compartilhamento, além de revogar o consentimento. Como o site não identifica quem você é, a forma mais direta de controlar os dados de medição é recusar ou revogar o consentimento e apagar os cookies. Para outros pedidos, escreva para o contato acima.
+
+    ## Alterações
+
+    Se esta política mudar, a data acima será atualizada e o aviso de cookies aparecerá de novo.

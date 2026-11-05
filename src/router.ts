@@ -32,6 +32,11 @@ const router = createRouter({
       name: 'about',
       component: () => import('./pages/About.vue'),
     },
+    {
+      path: '/privacidade',
+      name: 'privacy',
+      component: () => import('./pages/Privacy.page.vue'),
+    },
     ...toolsRoutes,
     ...toolsRedirectRoutes,
     ...(config.app.env === 'development' ? demoRoutes : []),

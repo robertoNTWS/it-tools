@@ -11,6 +11,8 @@ import MenuLayout from '../components/MenuLayout.vue';
 import NavbarButtons from '../components/NavbarButtons.vue';
 import { useStyleStore } from '@/stores/style.store';
 import { config } from '@/config';
+import { useConsentStore } from '@/modules/analytics/consent.store';
+import { isAnalyticsConfigured } from '@/modules/analytics/analytics.service';
 import type { ToolCategory } from '@/tools/tools.types';
 import { useToolStore } from '@/tools/tools.store';
 import { useTracker } from '@/modules/tracker/tracker.services';
@@ -21,6 +23,8 @@ const styleStore = useStyleStore();
 const version = config.app.version;
 
 const { tracker } = useTracker();
+const consentStore = useConsentStore();
+const showCookiePreferences = isAnalyticsConfigured();
 const { t } = useI18n();
 
 const toolStore = useToolStore();
@@ -78,6 +82,17 @@ const tools = computed<ToolCategory[]>(() => [
               {{ $t('footer.sourceCode') }}
             </c-link>
           </div>
+          <div>
+            <RouterLink to="/privacidade" class="footer-link">
+              {{ $t('footer.privacy') }}
+            </RouterLink>
+            <template v-if="showCookiePreferences">
+              ·
+              <button type="button" class="footer-link" @click="consentStore.reopen()">
+                {{ $t('footer.cookiePreferences') }}
+              </button>
+            </template>
+          </div>
         </div>
       </div>
     </template>
@@ -122,7 +137,7 @@ const tools = computed<ToolCategory[]>(() => [
             class="support-button"
             :bordered="false"
             :aria-label="$t('home.buyMeACoffee')"
-            @click="() => tracker.trackEvent({ eventName: 'Support button clicked' })"
+            @click="() => tracker.trackEvent({ eventName: 'support_click' })"
           >
             <!-- No celular, só o ícone, para não espremer a busca -->
             <template v-if="!styleStore.isSmallScreen">
@@ -162,6 +177,17 @@ const tools = computed<ToolCategory[]>(() => [
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+.footer-link {
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .footer {

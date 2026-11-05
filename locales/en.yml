@@ -475,6 +475,60 @@ commandPalette:
     name: 'About'
     description: 'Learn more about IT-Tools.'
 footer:
+  privacy: 'Privacy'
+  cookiePreferences: 'Cookie preferences'
   sourceCode: 'Source code of this version'
   basedOn: 'Canidev Suíço, based on'
   license: 'GPL-3.0 license'
+
+consent:
+  label: 'Cookie notice'
+  message: 'We use Google Analytics to measure visits, only if you accept. What you type in the tools never leaves your browser.'
+  accept: 'Accept'
+  reject: 'Decline'
+  privacy: 'Privacy policy'
+privacy:
+  title: 'Privacy policy'
+  content: |
+    # Privacy policy
+
+    Last updated: November 4, 2026.
+
+    Canidev Suíço is a collection of tools that run in your browser. This page explains which data is processed when you use the site.
+
+    ## Controller
+
+    Roberto Guilherme. Contact: [roberto.ntws{'@'}gmail.com](mailto:roberto.ntws{'@'}gmail.com).
+
+    ## What you type in the tools
+
+    Everything you type or upload to the tools (text, files, passwords, tokens) is processed on your own device and is never sent to any server or to Google Analytics.
+
+    The regex tester puts the expression in the page address so you can share the link. That part of the address is not sent to Google Analytics.
+
+    ## Audience measurement (Google Analytics)
+
+    Only with your consent, we use Google Analytics 4 to know how many people visit the site and which tools are used the most. It collects visited pages (without address parameters), date and time, device type, browser, operating system, language, approximate region estimated from the IP address (which is not stored) and clicks on the support button of the original project.
+
+    Google Analytics sets the `_ga` and `_ga_<ID>` cookies, which last up to 2 years. Detailed data is kept in Google Analytics for 2 months. This data is not used for ads or personalization, and Google signals are disabled. See [Google's privacy policy](https://policies.google.com/privacy).
+
+    The legal basis is your consent (Brazilian LGPD, art. 7, I). You can accept, decline or change your choice at any time in **Cookie preferences**, in the menu footer. Declining after accepting deletes the Google Analytics cookies.
+
+    ## Data stored in your browser
+
+    The site stores only preferences in your browser's local storage: language, light or dark theme, favorite tools, menu state, options of some tools (such as indentation) and your cookie choice. This data never leaves your device.
+
+    ## Third-party services
+
+    - **Google Analytics**, only with your consent, as described above.
+    - **unpkg.com**: the ASCII Art text generator downloads its fonts from this service when you use it, which receives your IP address like any website.
+    - **Vercel**, the hosting provider, may log technical access data (such as IP and browser) for security and operation.
+    - **External links** (GitHub, X, Buy me a coffee and others) lead to sites with their own policies.
+
+    ## Your rights
+
+    Under the LGPD you may request confirmation of and access to your data, correction, deletion and information about sharing, and you may withdraw consent. Since the site does not identify you, the most direct way to control measurement data is to decline or withdraw consent and delete the cookies. For other requests, write to the contact above.
+
+    ## Changes
+
+    If this policy changes, the date above will be updated and the cookie notice will appear again.

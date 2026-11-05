@@ -7,6 +7,7 @@ import { layouts } from './layouts';
 import { useStyleStore } from './stores/style.store';
 import { palette } from './palette';
 import { SITE_URL } from './brand';
+import ConsentBanner from './modules/analytics/components/consent-banner.vue';
 
 const route = useRoute();
 const layout = computed(() => route?.meta?.layout ?? layouts.base);
@@ -46,6 +47,7 @@ syncRef(
         <component :is="layout">
           <RouterView />
         </component>
+        <ConsentBanner />
       </NNotificationProvider>
     </NMessageProvider>
   </n-config-provider>

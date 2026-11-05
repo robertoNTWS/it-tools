@@ -12,6 +12,7 @@ import { naive } from './plugins/naive.plugin';
 import App from './App.vue';
 import router from './router';
 import { i18nPlugin } from './plugins/i18n.plugin';
+import { createAnalyticsPlugin } from './modules/analytics/analytics.plugin';
 
 registerSW();
 
@@ -22,6 +23,7 @@ app.use(createHead());
 app.use(i18nPlugin);
 app.use(router);
 app.use(naive);
+app.use(createAnalyticsPlugin({ router }));
 app.use(shadow);
 
 app.mount('#app');

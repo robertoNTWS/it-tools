@@ -1,9 +1,13 @@
+import { trackEvent } from '@/modules/analytics/analytics.service';
+
 export { createTrackerService, useTracker };
 
-// Eventos de uso do site. Sem destino até a integração com o GA (fase 5.3), que só envia com consentimento.
+// Eventos de uso do site, enviados ao GA4 só quando houver consentimento
 function createTrackerService() {
   return {
-    trackEvent(_event: { eventName: string }) {},
+    trackEvent({ eventName }: { eventName: string }) {
+      trackEvent(eventName);
+    },
   };
 }
 
