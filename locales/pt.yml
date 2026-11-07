@@ -452,6 +452,8 @@ ui:
     placeholder: 'Digite o texto'
   select:
     placeholder: 'Selecione uma opção'
+    searchPlaceholder: 'Buscar...'
+    noResults: 'Nenhum resultado encontrado'
   table:
     description: 'Tabela de dados'
 localeSelector:

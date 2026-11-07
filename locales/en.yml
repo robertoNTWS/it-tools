@@ -448,6 +448,8 @@ ui:
     placeholder: 'Input text'
   select:
     placeholder: 'Select an option'
+    searchPlaceholder: 'Search...'
+    noResults: 'No results found'
   table:
     description: 'Data table'
 localeSelector:
