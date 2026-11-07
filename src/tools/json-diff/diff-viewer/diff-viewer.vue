@@ -24,7 +24,7 @@ const showResults = computed(() => !_.isUndefined(leftJson.value) && !_.isUndefi
   <div v-if="showResults">
     <div flex justify-center>
       <n-form-item :label="t('tools.json-diff.onlyDifferences')" label-placement="left">
-        <n-switch v-model:value="onlyShowDifferences" />
+        <n-switch v-model:value="onlyShowDifferences" :aria-label="t('tools.json-diff.onlyDifferences')" />
       </n-form-item>
     </div>
 

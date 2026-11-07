@@ -130,13 +130,13 @@ const cronValidationRules = [
     <div flex justify-center>
       <n-form :show-feedback="false" label-width="170" label-placement="left">
         <n-form-item :label="t('tools.crontab-generator.verbose')">
-          <n-switch v-model:value="cronstrueConfig.verbose" />
+          <n-switch v-model:value="cronstrueConfig.verbose" :aria-label="t('tools.crontab-generator.verbose')" />
         </n-form-item>
         <n-form-item :label="t('tools.crontab-generator.use24Hour')">
-          <n-switch v-model:value="cronstrueConfig.use24HourTimeFormat" />
+          <n-switch v-model:value="cronstrueConfig.use24HourTimeFormat" :aria-label="t('tools.crontab-generator.use24Hour')" />
         </n-form-item>
         <n-form-item :label="t('tools.crontab-generator.daysStartAtZero')">
-          <n-switch v-model:value="cronstrueConfig.dayOfWeekStartIndexZero" />
+          <n-switch v-model:value="cronstrueConfig.dayOfWeekStartIndexZero" :aria-label="t('tools.crontab-generator.daysStartAtZero')" />
         </n-form-item>
       </n-form>
     </div>

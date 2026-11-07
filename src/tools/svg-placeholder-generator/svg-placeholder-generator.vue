@@ -68,7 +68,7 @@ const { download } = useDownloadFileFromBase64({ source: base64 });
         />
       </div>
       <n-form-item :label="t('tools.svg-placeholder-generator.exactSize')" label-placement="left">
-        <n-switch v-model:value="useExactSize" />
+        <n-switch v-model:value="useExactSize" :aria-label="t('tools.svg-placeholder-generator.exactSize')" />
       </n-form-item>
     </n-form>
 

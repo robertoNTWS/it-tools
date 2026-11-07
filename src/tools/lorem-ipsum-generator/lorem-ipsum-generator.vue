@@ -37,10 +37,10 @@ const { copy } = useCopy({ source: loremIpsumText, text: t('tools.lorem-ipsum-ge
       <n-slider v-model:value="words" range :step="1" :min="1" :max="50" />
     </n-form-item>
     <n-form-item :label="t('tools.lorem-ipsum-generator.startWithLorem')" :show-feedback="false" label-width="200" label-placement="left">
-      <n-switch v-model:value="startWithLoremIpsum" />
+      <n-switch v-model:value="startWithLoremIpsum" :aria-label="t('tools.lorem-ipsum-generator.startWithLorem')" />
     </n-form-item>
     <n-form-item :label="t('tools.lorem-ipsum-generator.asHtml')" :show-feedback="false" label-width="200" label-placement="left">
-      <n-switch v-model:value="asHTML" />
+      <n-switch v-model:value="asHTML" :aria-label="t('tools.lorem-ipsum-generator.asHtml')" />
     </n-form-item>
 
     <c-input-text :value="loremIpsumText" multiline :placeholder="t('tools.lorem-ipsum-generator.outputPlaceholder')" readonly mt-5 rows="5" />

@@ -31,21 +31,21 @@ const { copy } = useCopy({ source: token, text: t('tools.token-generator.copied'
         <div flex justify-center>
           <div>
             <n-form-item :label="t('tools.token-generator.uppercase')">
-              <n-switch v-model:value="withUppercase" />
+              <n-switch v-model:value="withUppercase" :aria-label="t('tools.token-generator.uppercase')" />
             </n-form-item>
 
             <n-form-item :label="t('tools.token-generator.lowercase')">
-              <n-switch v-model:value="withLowercase" />
+              <n-switch v-model:value="withLowercase" :aria-label="t('tools.token-generator.lowercase')" />
             </n-form-item>
           </div>
 
           <div>
             <n-form-item :label="t('tools.token-generator.numbers')">
-              <n-switch v-model:value="withNumbers" />
+              <n-switch v-model:value="withNumbers" :aria-label="t('tools.token-generator.numbers')" />
             </n-form-item>
 
             <n-form-item :label="t('tools.token-generator.symbols')">
-              <n-switch v-model:value="withSymbols" />
+              <n-switch v-model:value="withSymbols" :aria-label="t('tools.token-generator.symbols')" />
             </n-form-item>
           </div>
         </div>

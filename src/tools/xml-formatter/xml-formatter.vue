@@ -28,7 +28,7 @@ const rules: UseValidationRule<string>[] = [
   <div important:flex-full important:flex-shrink-0 important:flex-grow-0>
     <div flex justify-center>
       <n-form-item :label="t('tools.xml-formatter.collapseContent')" label-placement="left">
-        <n-switch v-model:value="collapseContent" />
+        <n-switch v-model:value="collapseContent" :aria-label="t('tools.xml-formatter.collapseContent')" />
       </n-form-item>
       <n-form-item :label="t('tools.xml-formatter.indentSize')" label-placement="left" label-width="100" :show-feedback="false">
         <n-input-number v-model:value="indentSize" min="0" max="10" w-100px />

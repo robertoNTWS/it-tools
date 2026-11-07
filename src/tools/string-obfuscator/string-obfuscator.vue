@@ -32,7 +32,7 @@ const { copy } = useCopy({ source: obfuscatedString });
         <div mb-5px>
           {{ t('tools.string-obfuscator.keepSpaces') }}
         </div>
-        <n-switch v-model:value="keepSpace" />
+        <n-switch v-model:value="keepSpace" :aria-label="t('tools.string-obfuscator.keepSpaces')" />
       </div>
     </div>
 
