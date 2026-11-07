@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 import { useStorage } from '@vueuse/core';
 
 // Mudar a versão faz o aviso aparecer de novo para todos (ex.: quando a política mudar)
-export const CONSENT_VERSION = 1;
+export const CONSENT_VERSION = 2;
 export const CONSENT_STORAGE_KEY = 'canidev:consentimento';
 
 export type ConsentStatus = 'pending' | 'granted' | 'denied';

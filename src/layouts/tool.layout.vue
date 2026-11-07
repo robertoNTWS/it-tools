@@ -7,6 +7,7 @@ import BaseLayout from './base.layout.vue';
 import FavoriteButton from '@/components/FavoriteButton.vue';
 import type { Tool } from '@/tools/tools.types';
 import { SITE_NAME } from '@/brand';
+import AffiliateBanner from '@/modules/banners/components/affiliate-banner.vue';
 
 const route = useRoute();
 const { t } = useI18n();
@@ -35,6 +36,7 @@ useHead(head);
 <template>
   <BaseLayout>
     <div class="tool-layout">
+      <AffiliateBanner />
       <div class="tool-header">
         <div flex flex-nowrap items-center justify-between>
           <n-h1>

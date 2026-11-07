@@ -481,6 +481,8 @@ footer:
   basedOn: 'Canidev Suíço, based on'
   license: 'GPL-3.0 license'
 
+banner:
+  label: 'Advertisement'
 consent:
   label: 'Cookie notice'
   message: 'We use Google Analytics to measure visits, only if you accept. What you type in the tools never leaves your browser.'
@@ -492,7 +494,7 @@ privacy:
   content: |
     # Privacy policy
 
-    Last updated: November 4, 2026.
+    Last updated: November 7, 2026.
 
     Canidev Suíço is a collection of tools that run in your browser. This page explains which data is processed when you use the site.
 
@@ -508,11 +510,15 @@ privacy:
 
     ## Audience measurement (Google Analytics)
 
-    Only with your consent, we use Google Analytics 4 to know how many people visit the site and which tools are used the most. It collects visited pages (without address parameters), date and time, device type, browser, operating system, language, approximate region estimated from the IP address (which is not stored) and clicks on the support button of the original project.
+    Only with your consent, we use Google Analytics 4 to know how many people visit the site and which tools are used the most. It collects visited pages (without address parameters), date and time, device type, browser, operating system, language, approximate region estimated from the IP address (which is not stored) and clicks on the support button of the original project and on affiliate banners.
 
     Google Analytics sets the `_ga` and `_ga_<ID>` cookies, which last up to 2 years. Detailed data is kept in Google Analytics for 2 months. This data is not used for ads or personalization, and Google signals are disabled. See [Google's privacy policy](https://policies.google.com/privacy).
 
     The legal basis is your consent (Brazilian LGPD, art. 7, I). You can accept, decline or change your choice at any time in **Cookie preferences**, in the menu footer. Declining after accepting deletes the Google Analytics cookies.
+
+    ## Affiliate links
+
+    Some pages show a banner labeled **Advertisement**, with an affiliate link to courses on Hotmart. If you buy through that link, the site owner may receive a commission, at no extra cost to you. The site does not know who clicked or who bought: with your consent, it only records that a banner was clicked. Clicking takes you to Hotmart, which has its own privacy and cookie policy.
 
     ## Data stored in your browser
 
@@ -523,6 +529,7 @@ privacy:
     - **Google Analytics**, only with your consent, as described above.
     - **unpkg.com**: the ASCII Art text generator downloads its fonts from this service when you use it, which receives your IP address like any website.
     - **Vercel**, the hosting provider, may log technical access data (such as IP and browser) for security and operation.
+    - **Hotmart**, when you click an affiliate banner; it sets its own cookies to track the referral.
     - **External links** (GitHub, X, Buy me a coffee and others) lead to sites with their own policies.
 
     ## Your rights
