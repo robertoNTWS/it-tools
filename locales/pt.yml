@@ -78,14 +78,17 @@ tools:
 
   password-strength-analyser:
     title: 'Teste de força de senha'
+    menu: 'Força de senha'
     description: 'Teste a força da sua senha online e veja o tempo estimado para quebrá-la. A análise é feita direto no navegador, sem enviar a senha.'
 
   chronometer:
     title: 'Cronômetro'
+    menu: 'Cronômetro'
     description: 'Cronômetro online simples para medir a duração de tarefas, com iniciar, parar e zerar. Funciona direto no navegador, sem instalar nada.'
 
   token-generator:
     title: 'Gerador de senha e token aleatório'
+    menu: 'Senha e token'
     description: 'Gere senhas e tokens aleatórios online, escolhendo letras maiúsculas, minúsculas, números e símbolos. Tudo direto no navegador, sem enviar seus dados.'
 
     uppercase: 'Maiúsculas (ABC...)'
@@ -100,334 +103,417 @@ tools:
       refresh: 'Gerar novamente'
   percentage-calculator:
     title: 'Calculadora de porcentagem'
+    menu: 'Porcentagem'
     description: 'Calcule porcentagens online: quanto é X% de um valor, que porcentagem um valor representa de outro e a variação percentual entre dois valores.'
 
   svg-placeholder-generator:
     title: 'Gerador de imagem placeholder SVG'
+    menu: 'Placeholder SVG'
     description: 'Gere imagens placeholder em SVG online, com tamanho, cores e texto personalizados, para usar como espaço reservado em layouts e aplicações.'
 
   json-to-csv:
     title: 'Conversor de JSON para CSV'
+    menu: 'JSON → CSV'
     description: 'Converta JSON para CSV online, com detecção automática do cabeçalho. A conversão acontece direto no navegador, sem enviar seus dados.'
 
   camera-recorder:
     title: 'Gravar vídeo e tirar foto pela webcam'
+    menu: 'Webcam: vídeo e foto'
     description: 'Tire fotos e grave vídeos online com a webcam ou a câmera do seu dispositivo. A gravação fica no seu navegador e não é enviada a servidores.'
 
   keycode-info:
     title: 'Descobrir o keycode de uma tecla (JavaScript)'
+    menu: 'Keycode de tecla'
     description: 'Pressione qualquer tecla e veja o keycode, code, key, location e modificadores do evento de teclado em JavaScript. Útil para criar atalhos.'
 
   emoji-picker:
     title: 'Emojis para copiar e colar'
+    menu: 'Emojis'
     description: 'Copie e cole emojis com um clique e consulte o código Unicode e os code points de cada um. Busque emojis pelo nome, direto no navegador.'
 
   color-converter:
     title: 'Conversor de cores (HEX, RGB, HSL)'
+    menu: 'Cores (HEX, RGB, HSL)'
     description: 'Converta cores online entre HEX, RGB, HSL e nomes CSS. Escolha a cor e copie o código no formato de que você precisa.'
 
   bcrypt:
     title: 'Gerador e verificador de hash Bcrypt'
+    menu: 'Bcrypt'
     description: 'Gere hashes bcrypt online e compare um texto com um hash existente. O bcrypt é uma função de hash de senhas baseada na cifra Blowfish.'
 
   crontab-generator:
     title: 'Gerador de expressão cron (crontab)'
+    menu: 'Expressão cron'
     description: 'Valide e gere expressões cron online e veja o agendamento descrito em texto legível. Inclui a sintaxe do crontab e exemplos prontos.'
 
   http-status-codes:
     title: 'Códigos de status HTTP'
+    menu: 'Status HTTP'
     description: 'Lista completa dos códigos de status HTTP (200, 301, 404, 500...) com o nome e o significado de cada um. Busque pelo código ou pela descrição.'
 
   sql-prettify:
     title: 'Formatador de SQL'
+    menu: 'Formatar SQL'
     description: 'Formate e indente consultas SQL online, com suporte a vários dialetos (MySQL, PostgreSQL, SQL Server, entre outros). Tudo direto no navegador.'
 
   benchmark-builder:
     title: 'Comparador de tempo de execução (benchmark)'
+    menu: 'Benchmark'
     description: 'Compare o tempo de execução de tarefas com este benchmark online simples: informe as medições de cada tarefa e veja médias e diferenças.'
 
   git-memo:
     title: 'Comandos Git: guia rápido'
+    menu: 'Comandos Git'
     description: 'Guia rápido com os comandos Git mais usados: configurar, commitar, criar branches, desfazer alterações e trabalhar com repositórios remotos.'
 
   slugify-string:
     title: 'Gerador de slug para URL'
+    menu: 'Slug para URL'
     description: 'Transforme qualquer texto em um slug seguro para URLs, nomes de arquivo e IDs, removendo acentos, espaços e caracteres especiais.'
 
   encryption:
     title: 'Criptografar e descriptografar texto (AES)'
+    menu: 'Criptografia AES'
     description: 'Criptografe e descriptografe textos online com algoritmos como AES, TripleDES, Rabbit e RC4, usando uma chave secreta. Tudo direto no navegador.'
 
   random-port-generator:
     title: 'Gerador de porta aleatória'
+    menu: 'Porta aleatória'
     description: 'Gere números de porta aleatórios fora da faixa de portas conhecidas (0 a 1023), prontos para usar em serviços e aplicações locais.'
 
   yaml-prettify:
     title: 'Formatador de YAML'
+    menu: 'Formatar YAML'
     description: 'Formate e indente YAML online, deixando o conteúdo legível e organizado. A formatação acontece direto no navegador, sem enviar seus dados.'
 
   eta-calculator:
     title: 'Calculadora de tempo restante (ETA)'
+    menu: 'Tempo restante (ETA)'
     description: 'Calcule o tempo estimado de conclusão (ETA) de uma tarefa, como o horário de término e a duração de um download, a partir do ritmo atual.'
 
   roman-numeral-converter:
     title: 'Conversor de números romanos'
+    menu: 'Números romanos'
     description: 'Converta números romanos em números arábicos e números arábicos em romanos, online e na hora. Ideal para datas, capítulos e listas.'
 
   hmac-generator:
     title: 'Gerador de HMAC'
+    menu: 'HMAC'
     description: 'Gere um código HMAC (hash-based message authentication code) online com uma chave secreta e a função de hash de sua preferência, como SHA256.'
 
   bip39-generator:
     title: 'Gerador de frase mnemônica BIP39'
+    menu: 'Frase BIP39'
     description: 'Gere uma frase mnemônica BIP39 aleatória ou a partir de uma entropia existente, e recupere a entropia a partir da frase. Tudo no navegador.'
 
   base64-file-converter:
     title: 'Converter arquivo e imagem para Base64'
+    menu: 'Base64 (arquivo)'
     description: 'Converta textos, arquivos e imagens para Base64 e de volta, online. O arquivo é processado direto no navegador e não é enviado a servidores.'
 
   list-converter:
     title: 'Conversor e formatador de listas'
+    menu: 'Listas'
     description: 'Formate listas e dados em colunas: transponha, adicione prefixo e sufixo, inverta, ordene, converta para minúsculas e trunque valores.'
 
   base64-string-converter:
     title: 'Codificar e decodificar Base64'
+    menu: 'Base64 (texto)'
     description: 'Codifique textos em Base64 e decodifique Base64 para texto online, com opção URL-safe. Tudo direto no navegador, sem enviar seus dados.'
 
   toml-to-yaml:
     title: 'Conversor de TOML para YAML'
+    menu: 'TOML → YAML'
     description: 'Converta TOML para YAML online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'
 
   math-evaluator:
     title: 'Calculadora de expressões matemáticas'
+    menu: 'Expressões matemáticas'
     description: 'Calcule expressões matemáticas online, com funções como sqrt, cos, sin, abs, log e potências. Digite a expressão e veja o resultado na hora.'
 
   json-to-yaml-converter:
     title: 'Conversor de JSON para YAML'
+    menu: 'JSON → YAML'
     description: 'Converta JSON para YAML online e em tempo real, enquanto você digita. A conversão acontece direto no navegador, sem enviar seus dados.'
 
   url-parser:
     title: 'Analisador de URL'
+    menu: 'Analisador de URL'
     description: 'Decomponha uma URL em suas partes: protocolo, origem, host, porta, caminho, parâmetros de query, usuário e senha. Útil para depurar links.'
 
   iban-validator-and-parser:
     title: 'Validador de IBAN'
+    menu: 'IBAN'
     description: 'Valide números IBAN e veja o país, o BBAN, se é um QR-IBAN e o formato legível. Útil para conferir dados bancários internacionais.'
 
   user-agent-parser:
     title: 'Analisador de User-Agent'
+    menu: 'User-Agent'
     description: 'Descubra o navegador, o motor, o sistema operacional, a CPU e o tipo ou modelo do dispositivo a partir de uma string de user-agent.'
 
   numeronym-generator:
     title: 'Gerador de numerônimos (i18n, a11y)'
+    menu: 'Numerônimos'
     description: 'Crie numerônimos, abreviações em que um número indica as letras omitidas. Ex.: "i18n" vem de "internationalization", com 18 letras entre o i e o n.'
 
   case-converter:
     title: 'Conversor de maiúsculas e minúsculas'
+    menu: 'Maiúsculas e minúsculas'
     description: 'Converta textos entre maiúsculas, minúsculas e formatos como camelCase, snake_case, kebab-case, PascalCase e CONSTANT_CASE.'
 
   html-entities:
     title: 'Codificar e decodificar entidades HTML'
+    menu: 'Entidades HTML'
     description: 'Codifique ou decodifique entidades HTML, substituindo caracteres como <, >, &, " e '' pelas versões em HTML (&lt;, &gt;, &amp;...).'
 
   json-prettify:
     title: 'Formatador de JSON (JSON beautifier)'
+    menu: 'Formatar JSON'
     description: 'Formate, indente e valide JSON online, deixando o conteúdo legível. A formatação acontece direto no navegador, sem enviar seus dados.'
 
   docker-run-to-docker-compose-converter:
     title: 'Converter docker run em docker-compose'
+    menu: 'docker run → compose'
     description: 'Transforme comandos "docker run" em arquivos docker-compose.yml online, prontos para usar. Tudo direto no navegador, sem enviar seus dados.'
 
   mac-address-lookup:
     title: 'Consulta de fabricante por endereço MAC'
+    menu: 'Fabricante por MAC'
     description: 'Descubra o fabricante de um dispositivo pelo endereço MAC (OUI). A consulta usa uma base local, direto no navegador, sem enviar seus dados.'
 
   mime-types:
     title: 'Tipos MIME e extensões de arquivo'
+    menu: 'Tipos MIME'
     description: 'Descubra o tipo MIME de uma extensão de arquivo e as extensões de um tipo MIME, além da lista completa de tipos (Content-Type).'
 
   toml-to-json:
     title: 'Conversor de TOML para JSON'
+    menu: 'TOML → JSON'
     description: 'Converta TOML para JSON online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'
 
   lorem-ipsum-generator:
     title: 'Gerador de Lorem Ipsum'
+    menu: 'Lorem Ipsum'
     description: 'Gere texto Lorem Ipsum online para preencher layouts e protótipos, escolhendo a quantidade de parágrafos, frases e palavras.'
 
   qrcode-generator:
     title: 'Gerador de QR Code'
+    menu: 'QR Code'
     description: 'Gere e baixe QR Codes para links ou textos, com cores de fundo e de primeiro plano personalizadas. Grátis e direto no navegador.'
 
   wifi-qrcode-generator:
     title: 'Gerador de QR Code para Wi-Fi'
+    menu: 'QR Code de Wi-Fi'
     description: 'Gere e baixe um QR Code para conectar celulares a uma rede Wi-Fi sem digitar a senha. Os dados ficam no seu navegador.'
 
   xml-formatter:
     title: 'Formatador de XML'
+    menu: 'Formatar XML'
     description: 'Formate e indente XML online, deixando o conteúdo legível e organizado. A formatação acontece direto no navegador, sem enviar seus dados.'
 
   temperature-converter:
     title: 'Conversor de temperatura (Celsius, Fahrenheit)'
+    menu: 'Temperatura'
     description: 'Converta temperaturas entre Celsius, Fahrenheit, Kelvin, Rankine, Delisle, Newton, Réaumur e Rømer, online e na hora.'
 
   chmod-calculator:
     title: 'Calculadora chmod (permissões Linux)'
+    menu: 'Calculadora chmod'
     description: 'Calcule permissões chmod no Linux: marque leitura, escrita e execução e veja o valor numérico (ex.: 755), o simbólico e o comando pronto.'
 
   rsa-key-pair-generator:
     title: 'Gerador de chaves RSA pública e privada'
+    menu: 'Chaves RSA'
     description: 'Gere um novo par de chaves RSA (pública e privada) no formato PEM. As chaves são geradas direto no navegador e não são enviadas a servidores.'
 
   html-wysiwyg-editor:
     title: 'Editor HTML visual (WYSIWYG)'
+    menu: 'Editor HTML visual'
     description: 'Editor HTML visual online e completo: formate o conteúdo como num editor de texto e obtenha o código-fonte HTML na hora.'
 
   yaml-to-toml:
     title: 'Conversor de YAML para TOML'
+    menu: 'YAML → TOML'
     description: 'Converta YAML para TOML online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'
 
   mac-address-generator:
     title: 'Gerador de endereço MAC'
+    menu: 'Gerador de MAC'
     description: 'Gere endereços MAC aleatórios online, definindo a quantidade, o prefixo e se as letras saem em maiúsculas ou minúsculas.'
 
   json-diff:
     title: 'Comparar JSON (JSON diff)'
+    menu: 'Comparar JSON'
     description: 'Compare dois objetos JSON online e veja as diferenças entre eles, campo a campo. Tudo direto no navegador, sem enviar seus dados.'
 
   jwt-parser:
     title: 'Decodificar JWT (JSON Web Token)'
+    menu: 'Decodificar JWT'
     description: 'Decodifique um JSON Web Token (JWT) online e veja o header, o payload e as claims. O token é lido direto no navegador e não é enviado.'
 
   date-converter:
     title: 'Conversor de data e timestamp Unix'
+    menu: 'Data e timestamp'
     description: 'Converta datas e horas entre timestamp Unix, ISO 8601, RFC 2822, UTC e outros formatos. Útil para logs, APIs e bancos de dados.'
 
   phone-parser-and-formatter:
     title: 'Validar e formatar número de telefone'
+    menu: 'Telefone'
     description: 'Valide e formate números de telefone de qualquer país e veja o código do país, o tipo de linha e os formatos nacional e internacional.'
 
   ipv4-subnet-calculator:
     title: 'Calculadora de sub-rede IPv4 (CIDR)'
+    menu: 'Sub-rede IPv4'
     description: 'Calcule sub-redes IPv4 a partir de um bloco CIDR: máscara, endereço de rede, broadcast, primeiro e último IP e quantidade de hosts.'
 
   og-meta-generator:
     title: 'Gerador de meta tags Open Graph'
+    menu: 'Meta tags Open Graph'
     description: 'Gere meta tags Open Graph e Twitter para o seu site e controle como os links aparecem quando são compartilhados em redes sociais.'
 
   ipv6-ula-generator:
     title: 'Gerador de IPv6 ULA (endereço local)'
+    menu: 'IPv6 ULA'
     description: 'Gere endereços IPv6 locais únicos (ULA), não roteáveis na internet, para a sua rede interna, conforme a RFC 4193.'
 
   hash-text:
     title: 'Gerador de hash MD5, SHA1 e SHA256'
+    menu: 'Hash (MD5, SHA)'
     description: 'Gere o hash de um texto com MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3 ou RIPEMD160. Tudo direto no navegador, sem enviar seus dados.'
 
   json-to-toml:
     title: 'Conversor de JSON para TOML'
+    menu: 'JSON → TOML'
     description: 'Converta JSON para TOML online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'
 
   device-information:
     title: 'Informações do dispositivo e resolução da tela'
+    menu: 'Dispositivo e tela'
     description: 'Veja a resolução da tela, a densidade de pixels (pixel ratio), o user agent e outras informações do seu dispositivo e navegador.'
 
   pdf-signature-checker:
     title: 'Verificador de assinatura digital de PDF'
+    menu: 'Assinatura de PDF'
     description: 'Verifique as assinaturas digitais de um PDF e descubra se o conteúdo foi alterado depois de assinado. O arquivo não sai do seu navegador.'
 
   json-minify:
     title: 'Minificar JSON'
+    menu: 'Minificar JSON'
     description: 'Minifique e compacte JSON online, removendo espaços e quebras de linha desnecessários. Tudo direto no navegador, sem enviar seus dados.'
 
   ulid-generator:
     title: 'Gerador de ULID'
+    menu: 'ULID'
     description: 'Gere ULIDs aleatórios online. O ULID (Universally Unique Lexicographically Sortable Identifier) é um identificador único e ordenável.'
 
   string-obfuscator:
     title: 'Ofuscador de texto (mascarar dados)'
+    menu: 'Ofuscar texto'
     description: 'Mascare parte de um texto, como uma senha, um IBAN ou um token, para compartilhá-lo e identificá-lo sem revelar o conteúdo completo.'
 
   base-converter:
     title: 'Conversor de bases numéricas (binário, hex)'
+    menu: 'Bases numéricas'
     description: 'Converta números entre bases: decimal, binário, octal, hexadecimal, base64 e bases personalizadas, online e na hora.'
 
   yaml-to-json-converter:
     title: 'Conversor de YAML para JSON'
+    menu: 'YAML → JSON'
     description: 'Converta YAML para JSON online e em tempo real, enquanto você digita. A conversão acontece direto no navegador, sem enviar seus dados.'
 
   uuid-generator:
     title: 'Gerador de UUID (GUID)'
+    menu: 'UUID'
     description: 'Gere UUIDs (GUIDs) online, um ou vários de uma vez, em diferentes versões. O UUID é um número de 128 bits usado para identificar informações.'
 
   ipv4-address-converter:
     title: 'Conversor de endereço IPv4'
+    menu: 'Endereço IPv4'
     description: 'Converta um endereço IP para decimal, binário, hexadecimal ou para a representação em IPv6, online e na hora.'
 
   text-statistics:
     title: 'Contador de caracteres e palavras'
+    menu: 'Contador de caracteres'
     description: 'Conte caracteres, palavras, linhas e o tamanho em bytes de um texto online. O texto é analisado direto no navegador, sem ser enviado.'
 
   text-to-nato-alphabet:
     title: 'Texto para alfabeto fonético da OTAN'
+    menu: 'Alfabeto da OTAN'
     description: 'Converta textos para o alfabeto fonético da OTAN (Alfa, Bravo, Charlie...) para soletrar com clareza por telefone ou rádio.'
 
   basic-auth-generator:
     title: 'Gerador de Basic Auth (header Authorization)'
+    menu: 'Basic Auth'
     description: 'Gere o header Authorization do tipo Basic Auth, codificado em Base64, a partir de um usuário e senha. Tudo direto no navegador.'
 
   text-to-unicode:
     title: 'Converter texto em Unicode'
+    menu: 'Texto em Unicode'
     description: 'Converta textos em códigos Unicode e códigos Unicode de volta para texto, online e na hora.'
 
   ipv4-range-expander:
     title: 'Intervalo de IPs para CIDR (IPv4)'
+    menu: 'Intervalo IPv4 → CIDR'
     description: 'Informe o IP inicial e o final e obtenha a sub-rede IPv4 válida que cobre o intervalo, com a notação CIDR correspondente.'
 
   text-diff:
     title: 'Comparar textos (diff)'
+    menu: 'Comparar textos'
     description: 'Compare dois textos online e veja as diferenças entre eles destacadas. Tudo direto no navegador, sem enviar seus dados.'
 
   otp-generator:
     title: 'Gerador de código OTP (2FA / TOTP)'
+    menu: 'Código OTP (2FA)'
     description: 'Gere e valide códigos OTP baseados em tempo (TOTP) para autenticação em dois fatores (2FA), a partir de uma chave secreta.'
 
   url-encoder:
     title: 'Codificar e decodificar URL (URL encode)'
+    menu: 'URL encode'
     description: 'Codifique textos no formato de URL (percent-encoding) ou decodifique URLs codificadas, online. Tudo direto no navegador.'
 
   text-to-binary:
     title: 'Converter texto em binário (ASCII)'
+    menu: 'Texto em binário'
     description: 'Converta textos para binário (ASCII) e binário de volta para texto, online e na hora. Útil para estudar a codificação de caracteres.'
 
   ascii-text-drawer:
     title: 'Gerador de texto em ASCII Art'
+    menu: 'ASCII Art'
     description: 'Crie texto em ASCII Art online, com várias fontes e estilos, pronto para copiar e usar em terminais, READMEs e comentários de código.'
 
   email-normalizer:
     title: 'Normalizador de e-mails'
+    menu: 'Normalizar e-mails'
     description: 'Normalize endereços de e-mail para um formato padrão e facilite a comparação. Útil para remover duplicados e limpar listas de contatos.'
 
   json-to-xml:
     title: 'Conversor de JSON para XML'
+    menu: 'JSON → XML'
     description: 'Converta JSON para XML online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'
 
   markdown-to-html:
     title: 'Conversor de Markdown para HTML'
+    menu: 'Markdown → HTML'
     description: 'Converta Markdown para HTML online, veja o resultado e imprima ou salve como PDF. Tudo direto no navegador, sem enviar seus dados.'
 
   regex-memo:
     title: 'Regex: guia rápido de expressões regulares'
+    menu: 'Guia de regex'
     description: 'Guia rápido de regex em JavaScript: caracteres especiais, conjuntos, quantificadores, âncoras e grupos de captura, com exemplos para consultar.'
 
   regex-tester:
     title: 'Testador de regex (expressões regulares)'
+    menu: 'Testar regex'
     description: 'Teste expressões regulares (regex) online: veja as correspondências, o diagrama da regex e um texto de exemplo, com suporte às flags do JavaScript.'
 
   safelink-decoder:
     title: 'Decodificador de Safe Links do Outlook'
+    menu: 'Safe Links do Outlook'
     description: 'Decodifique links Safe Links do Outlook (Microsoft Defender) e descubra a URL original antes de clicar. Tudo direto no navegador.'
 
   xml-to-json:
     title: 'Conversor de XML para JSON'
+    menu: 'XML → JSON'
     description: 'Converta XML para JSON online, com validação da sintaxe. A conversão acontece direto no navegador, sem enviar seus dados.'
 
 ui:

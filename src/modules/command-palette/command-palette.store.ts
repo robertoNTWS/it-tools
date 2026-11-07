@@ -20,6 +20,8 @@ export const useCommandPaletteStore = defineStore('command-palette', () => {
 
   const toolsOptions = toolStore.tools.map(tool => ({
     ...tool,
+    // A busca também encontra pelo nome curto do menu (tools.<rota>.menu)
+    keywords: [...tool.keywords, translate(`tools.${tool.path.replace(/^\//, '')}.menu`)],
     to: tool.path,
     toolCategory: tool.category,
     category: translate('commandPalette.categories.tools'),

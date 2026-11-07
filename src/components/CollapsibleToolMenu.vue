@@ -9,7 +9,15 @@ const props = withDefaults(defineProps<{ toolsByCategory?: ToolCategory[] }>(), 
 const { toolsByCategory } = toRefs(props);
 const route = useRoute();
 
-const makeLabel = (tool: Tool) => () => h(RouterLink, { to: tool.path }, { default: () => tool.name });
+const { t, te } = useI18n();
+
+// Nome curto só para o menu (tools.<rota>.menu, D51); o título completo fica na página e aparece ao passar o mouse
+function menuName(tool: Tool) {
+  const key = `tools.${tool.path.replace(/^\//, '')}.menu`;
+  return te(key) ? t(key) : tool.name;
+}
+
+const makeLabel = (tool: Tool) => () => h(RouterLink, { to: tool.path, title: tool.name }, { default: () => menuName(tool) });
 const makeIcon = (tool: Tool) => () => h(MenuIconItem, { tool });
 
 const collapsedCategories = useStorage<Record<string, boolean>>(
@@ -85,6 +93,24 @@ const themeVars = useThemeVars();
     ::v-deep(.n-menu-item-content::before) {
       left: 0;
       right: 13px;
+    }
+
+    // Nome que não couber quebra a linha em vez de ser cortado com reticências
+    ::v-deep(.n-menu-item) {
+      height: auto;
+    }
+
+    ::v-deep(.n-menu-item-content) {
+      min-height: 38px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+
+    ::v-deep(.n-menu-item-content-header) {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+      line-height: 1.3;
     }
   }
 
