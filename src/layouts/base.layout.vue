@@ -17,8 +17,10 @@ import type { ToolCategory } from '@/tools/tools.types';
 import { useToolStore } from '@/tools/tools.store';
 import { useTracker } from '@/modules/tracker/tracker.services';
 import CollapsibleToolMenu from '@/components/CollapsibleToolMenu.vue';
+import { brand, brandGradient } from '@/palette';
 
 const themeVars = useThemeVars();
+const supportGradient = brandGradient(48);
 const styleStore = useStyleStore();
 const version = config.app.version;
 
@@ -167,9 +169,9 @@ const tools = computed<ToolCategory[]>(() => [
 // }
 
 .support-button {
-  background: #1B2A6B;
-  background: linear-gradient(48deg, #1B2A6B 0%, #2447C2 60%, #2F5BEA 100%);
-  color: #fff !important;
+  background: v-bind('brand.deep');
+  background: v-bind(supportGradient);
+  color: v-bind('brand.onBrand') !important;
   transition: padding ease 0.2s !important;
 
   &:hover {

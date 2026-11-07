@@ -30,3 +30,16 @@ export const palette = {
     onPrimary: '#0D1018',
   },
 } as const;
+
+// Gradiente da marca, igual nos dois temas: botão de apoio, aviso de cookies e banners próprios
+// (docs/scripts/gerar-banner.cjs repete estes valores, porque gera as imagens fora do app).
+export const brand = {
+  deep: '#1B2A6B',
+  mid: '#2447C2',
+  bright: '#2F5BEA',
+  onBrand: '#FFFFFF',
+} as const;
+
+export function brandGradient(angle: number) {
+  return `linear-gradient(${angle}deg, ${brand.deep} 0%, ${brand.mid} 62%, ${brand.bright} 100%)`;
+}
