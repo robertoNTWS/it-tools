@@ -456,8 +456,6 @@ ui:
     noResults: 'Nenhum resultado encontrado'
   table:
     description: 'Tabela de dados'
-localeSelector:
-  placeholder: 'Selecione o idioma'
 commandPalette:
   placeholder: 'Digite para buscar uma ferramenta ou um comando...'
   categories:
@@ -533,7 +531,7 @@ privacy:
 
     ## Dados guardados no seu navegador
 
-    O site guarda no armazenamento local do navegador (localStorage) apenas preferências: idioma, tema claro ou escuro, ferramentas favoritas, estado do menu, opções de algumas ferramentas (como a indentação) e a sua escolha sobre cookies. Esses dados não saem do seu dispositivo e são apagados quando você limpa os dados do site no navegador.
+    O site guarda no armazenamento local do navegador (localStorage) apenas preferências: tema claro ou escuro, ferramentas favoritas, estado do menu, opções de algumas ferramentas (como a indentação) e a sua escolha sobre cookies. Esses dados não saem do seu dispositivo e são apagados quando você limpa os dados do site no navegador.
 
     ## Serviços de terceiros
 

@@ -452,8 +452,6 @@ ui:
     noResults: 'No results found'
   table:
     description: 'Data table'
-localeSelector:
-  placeholder: 'Select a language'
 commandPalette:
   placeholder: 'Type to search a tool or a command...'
   categories:
@@ -524,7 +522,7 @@ privacy:
 
     ## Data stored in your browser
 
-    The site stores only preferences in your browser's local storage: language, light or dark theme, favorite tools, menu state, options of some tools (such as indentation) and your cookie choice. This data never leaves your device.
+    The site stores only preferences in your browser's local storage: light or dark theme, favorite tools, menu state, options of some tools (such as indentation) and your cookie choice. This data never leaves your device.
 
     ## Third-party services
 

@@ -55,12 +55,8 @@ const tools = computed<ToolCategory[]>(() => [
       </RouterLink>
 
       <div class="sider-content">
-        <div v-if="styleStore.isSmallScreen" flex flex-col items-center>
-          <locale-selector w="90%" />
-
-          <div flex justify-center>
-            <NavbarButtons />
-          </div>
+        <div v-if="styleStore.isSmallScreen" flex justify-center>
+          <NavbarButtons />
         </div>
 
         <CollapsibleToolMenu :tools-by-category="tools" />
@@ -123,8 +119,6 @@ const tools = computed<ToolCategory[]>(() => [
         </c-tooltip>
 
         <command-palette />
-
-        <locale-selector v-if="!styleStore.isSmallScreen" />
 
         <div>
           <NavbarButtons v-if="!styleStore.isSmallScreen" />
